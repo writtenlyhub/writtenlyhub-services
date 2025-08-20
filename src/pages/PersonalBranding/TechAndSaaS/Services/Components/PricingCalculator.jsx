@@ -28,7 +28,7 @@ const PricingCalculator = () => {
             Pricing calculator 
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            CGet a sneak peek  <span className="text-orange-500">at your investment</span>
+            Get a sneak peek  <span className="text-orange-500">at your investment</span>
           </h2>
           {/* <p className="text-gray-300 text-base md:text-xl">
             Limited availability: 3 spots remaining
@@ -46,7 +46,7 @@ const PricingCalculator = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-white">
-              LinkedIn lead gen accelerator
+              LinkedIn Lead Gen Accelerator
             </h3>
             
             <ul className="space-y-4">

@@ -24,11 +24,11 @@ const CMOCloser = () => {
           </h3>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-4xl mx-auto">
-            Right now, SaaS founders with inferior products are booking enterprise demos from LinkedIn daily.
+            Right now, SaaS founders with inferior products are booking enterprise demos from LinkedIn daily.They're building authority while you're stuck explaining why your features matter.
           </p>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
-            They're building authority while you're stuck explaining why your features matter.
+            
             
             Every month you delay costs roughly $25K in missed pipeline based on my client results.
           </p>
@@ -36,7 +36,8 @@ const CMOCloser = () => {
           <p className="text-white text-xl md:text-2xl mb-6 max-w-2xl mx-auto font-bold">
             I'm accepting 3 new SaaS founders this quarter. Spots fill up because this system works.
             <br /><br />
-            Is one of them yours?
+            <span className="text-orange-500"> Is one of them yours?</span>
+           
           </p>
 
           <div className="flex flex-col items-center space-y-4">

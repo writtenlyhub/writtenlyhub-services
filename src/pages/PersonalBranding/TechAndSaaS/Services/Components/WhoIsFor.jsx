@@ -8,25 +8,25 @@ const personas = [
     title: "SaaS founder earning $100K-500K ARR",
     subtitle: "Who gets great product results but struggles with consistent lead generation from LinkedIn",
     icon: TrendingUp,
-    gradient: "from-emerald-500 to-teal-600",
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Tech entrepreneur with 3+ years building \nsoftware",
     subtitle: "Who has proven solutions but terrible LinkedIn visibility",
     icon: Zap,
-    gradient: "from-blue-500 to-cyan-600",
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "B2B software founder targeting enterprise \nclients",
     subtitle: "Who needs authority positioning to stop competing on price",
     icon: Users,
-    gradient: "from-purple-500 to-indigo-600",
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Enterprise software leader",
     subtitle: "Who spends weekends creating content but gets likes from other founders instead of qualified leads",
     icon: Sparkles,
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-orange-500 to-orange-700",
   },
 ]
 
@@ -71,7 +71,7 @@ const cardHoverVariants = {
 
 const WhoIsFor = () => {
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-[#022150] to-slate-800 py-24 font-sans overflow-hidden relative">
+    <section className="bg-[#022150] py-24 font-sans overflow-hidden relative">
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
         <motion.div

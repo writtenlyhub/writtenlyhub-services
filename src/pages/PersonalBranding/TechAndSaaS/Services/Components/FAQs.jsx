@@ -59,7 +59,7 @@ const faqs = [
           Need Answers?
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-          FAQs on personal<span className="text-orange-500 "> branding for SaaS founders</span>
+          FAQs on personal branding<span className="text-orange-500 "> for SaaS founders</span>
         </h2>
         {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           Everything you need to know about our personal branding services
