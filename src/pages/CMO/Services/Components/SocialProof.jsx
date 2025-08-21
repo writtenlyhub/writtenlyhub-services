@@ -14,21 +14,13 @@ const companies = [
   { id: 8, name: "FiMoney", logo: "https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo-footer.svg" },
   { id: 9, name: "Basofa", logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png" },
   { id: 10, name: "Look Forward Foundation", logo: "https://lookforward.in/wp-content/uploads/2023/07/LFF-Logo-1-Recovered-Recovered.png" },
-
 ];
 
-// const profileImages = [
-//   'https://randomuser.me/api/portraits/women/44.jpg',
-//   'https://randomuser.me/api/portraits/men/32.jpg',
-//   'https://randomuser.me/api/portraits/women/68.jpg',
-//   'https://randomuser.me/api/portraits/men/75.jpg'
-// ];
-
 const stats = [
-  { id: 1, name: 'Projects Completed', value: 500 },
-  { id: 2, name: 'Happy Clients', value: 200 },
-  { id: 3, name: 'Content Pieces', value: 10000 },
-  { id: 4, name: 'Years Experience', value: 5 },
+  { id: 1, name: 'Revenue Generated', value: 120, suffix: 'M+', prefix: '$' },
+  { id: 2, name: 'SaaS Companies Scaled', value: 27, suffix: '+' },
+  { id: 3, name: 'Faster Go-to-Market Execution', value: 40, suffix: '%' },
+  { id: 4, name: 'High-Intent Leads Generated', value: 18000, suffix: '+' },
 ];
 
 // Animation variants
@@ -44,7 +36,7 @@ const fadeInUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-const Counter = ({ value }) => {
+const Counter = ({ value, suffix = '', prefix = '' }) => {
   const [count, setCount] = useState(0);
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -66,8 +58,18 @@ const Counter = ({ value }) => {
     }
   }, [inView, value]);
 
-  const formatted = count >= 1000 ? `${(count / 1000).toFixed(count % 1000 !== 0 ? 1 : 0)}k` : count;
-  return <span ref={ref} className="text-orange-500 font-bold">{formatted}+</span>;
+  const formatNumber = (num) => {
+    if (num >= 1000) {
+      return `${(num / 1000).toFixed(num % 1000 !== 0 ? 1 : 0)}k`;
+    }
+    return num;
+  };
+
+  return (
+    <span ref={ref} className="text-orange-500 font-bold">
+      {prefix}{formatNumber(count)}{suffix}
+    </span>
+  );
 };
 
 const InfiniteScrollLogos = () => {
@@ -87,38 +89,37 @@ const InfiniteScrollLogos = () => {
   });
 
   return (
-<div
-  className="font-montserrat relative overflow-hidden py-12 md:py-20 "
-  onMouseEnter={() => setPaused(true)}
-  onMouseLeave={() => setPaused(false)}
->
-  <div className="absolute inset-0 pointer-events-none z-10">
-    <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#022150] to-transparent" />
-    <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#022150] to-transparent" />
-  </div>
-
-  {/* ✅ Wrap this in a width container */}
-  <div className="w-[90%] max-w-7xl mx-auto">
-    <motion.div
-      ref={scrollRef}
-      className="flex w-max space-x-16 px-4"
-      animate={{ x }}
-      transition={{ ease: "linear", duration: 0 }}
-      style={{ willChange: "transform" }}
+    <div
+      className="font-montserrat relative overflow-hidden py-12 md:py-20 "
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
     >
-      {duplicated.map((c, i) => (
-        <img
-          key={`${c.id}-${i}`}
-          src={c.logo}
-          alt={c.name}
-          className="h-10 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
-          draggable="false"
-        />
-      ))}
-    </motion.div>
-  </div>
-</div>
+      <div className="absolute inset-0 pointer-events-none z-10">
+        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#022150] to-transparent" />
+        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#022150] to-transparent" />
+      </div>
 
+      {/* ✅ Wrap this in a width container */}
+      <div className="w-[90%] max-w-7xl mx-auto">
+        <motion.div
+          ref={scrollRef}
+          className="flex w-max space-x-16 px-4"
+          animate={{ x }}
+          transition={{ ease: "linear", duration: 0 }}
+          style={{ willChange: "transform" }}
+        >
+          {duplicated.map((c, i) => (
+            <img
+              key={`${c.id}-${i}`}
+              src={c.logo}
+              alt={c.name}
+              className="h-10 opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0"
+              draggable="false"
+            />
+          ))}
+        </motion.div>
+      </div>
+    </div>
   );
 };
 
@@ -147,7 +148,7 @@ const SocialProof = () => {
               className={`text-center px-2 py-4 ${index % 4 !== 3 ? 'sm:border-r border-white/10' : ''}`}
             >
               <p className="text-2xl md:text-3xl font-bold text-white mb-1">
-                <Counter value={stat.value} />
+                <Counter value={stat.value} suffix={stat.suffix} prefix={stat.prefix} />
               </p>
               <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">{stat.name}</p>
             </motion.div>
