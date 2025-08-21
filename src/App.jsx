@@ -33,7 +33,7 @@ function App() {
         <Route path="/contentengine" element={<ContentEngine />} />
 
         {/* CMO Routes */}
-        <Route path="/cmo" element={<FCMO />} />
+        <Route path="/cmoaas-techsaas" element={<FCMO />} />
         <Route path="/cmo-martech" element={<MarTech />} /> 
         <Route path="/cmo-autoev" element={<AutoEV />} />
         <Route path="/cmo-startups" element={<Startups />} />

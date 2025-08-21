@@ -6,7 +6,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How fast will we see results with WrittenlyHub's CMO as a Service?",
+      question: "How fast will we see results with WrittenlyHub's CMO-as-a-Service?",
       answer: "Most clients see measurable improvements within 60 days. By month 3, you'll have a marketing system driving qualified leads."
     },
     {
@@ -14,7 +14,7 @@ const FAQ = () => {
       answer: "You're not paying more — you're getting more. With us, you skip hiring delays, training costs, and overhead. Instead, you get a full-stack SaaS marketing team that delivers 3x better results, faster."
     },
     {
-      question: "Is there a contract with WrittenlyHub's CMO as-a-Service?",
+      question: "Is there a contract with WrittenlyHub's CMO-as-a-Service?",
       answer: "We work in the plug-and-play field. Marketing that works takes time to build, but there's no long-term lock-in."
     },
     {
@@ -62,7 +62,7 @@ const FAQ = () => {
           Frequently asked <span className="text-orange-500 ">questions</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
-          Everything you need to know about our CMO as a Service
+          Everything you need to know about our CMO-as-a-Service
         </p>
       </motion.div>
 
