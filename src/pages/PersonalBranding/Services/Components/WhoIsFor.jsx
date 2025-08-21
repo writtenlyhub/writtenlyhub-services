@@ -1,89 +1,251 @@
-import { motion } from "framer-motion";
+"use client"
+
+import { motion } from "framer-motion"
+import { CheckCircle, Sparkles, TrendingUp, Users, Zap } from "lucide-react"
 
 const personas = [
   {
     title: "Leadership coaches",
     subtitle: "Earning $8K–25K/month with strong client results but inconsistent lead flow.",
+    icon: TrendingUp,
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Business consultants",
     subtitle: "3+ years of experience with powerful methodologies but low LinkedIn visibility.",
+    icon: Zap,
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Career strategists",
     subtitle: "Helping executives and need authority positioning to attract premium clients.",
+    icon: Users,
+    gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Executive coaches",
     subtitle: "Closing high-ticket deals but rely too heavily on referrals and networking.",
+    icon: Sparkles,
+    gradient: "from-orange-500 to-orange-700",
   },
-];
+]
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+}
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  },
+}
+
+const cardHoverVariants = {
+  hover: {
+    y: -8,
+    scale: 1.02,
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+}
 
 const WhoIsFor = () => {
   return (
-    <section className="bg-[#022150] py-24 font-montserrat overflow-hidden relative">
-      {/* Background elements */}
+    <section className="bg-[#022150] py-24 font-sans overflow-hidden relative">
+      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-1/4 -left-20 w-64 h-64 rounded-full bg-orange-400/10 blur-3xl"></div>
-        <div className="absolute bottom-1/3 -right-20 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl"></div>
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+          }}
+          className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-gradient-to-r from-orange-400/20 to-pink-500/20 blur-3xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1.2, 1, 1.2],
+            opacity: [0.15, 0.25, 0.15],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+          className="absolute bottom-1/3 -right-20 w-80 h-80 rounded-full bg-gradient-to-l from-blue-500/20 to-cyan-400/20 blur-3xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.05, 0.15, 0.05],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+            delay: 4,
+          }}
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-gradient-to-r from-purple-500/15 to-indigo-500/15 blur-3xl"
+        />
       </div>
 
-      <div className="w-[80%] mx-auto max-w-6xl">
-        {/* Header */}
+      {/* Floating particles */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 bg-orange-400/30 rounded-full"
+            style={{
+              left: `${20 + i * 15}%`,
+              top: `${30 + (i % 3) * 20}%`,
+            }}
+            animate={{
+              y: [-20, 20, -20],
+              opacity: [0.3, 0.8, 0.3],
+            }}
+            transition={{
+              duration: 4 + i,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+              delay: i * 0.5,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="w-[85%] mx-auto max-w-7xl relative z-20">
+        {/* Enhanced Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16 relative z-30"
+          transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="text-center mb-20 relative"
         >
-          <span className="text-orange-500 font-medium text-md uppercase tracking-widest">
-            Who this is for
-          </span>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
+          <motion.div
+            initial={{ scale: 0, rotate: -180 }}
+            whileInView={{ scale: 1, rotate: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full mb-6"
+          >
+            <CheckCircle className="w-4 h-4 text-orange-400" />
+            <span className="text-orange-400 font-medium text-sm uppercase tracking-widest">Who this is for</span>
+          </motion.div>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight"
+          >
             If this is you, <span className="text-orange-500">you need us</span>
-          </h2>
+          </motion.h2>
+
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "100px" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="h-1 bg-gradient-to-r from-orange-400 to-pink-500 mx-auto rounded-full"
+          />
         </motion.div>
 
-        {/* Content */}
-        <div className="flex flex-col">
-          {/* Personas Grid */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-12">
-              {personas.map((item, i) => (
+        {/* Enhanced Personas Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16"
+        >
+          {personas.map((item, i) => {
+            const IconComponent = item.icon
+            return (
+              <motion.div key={i} variants={itemVariants} whileHover="hover" className="group relative">
                 <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: i * 0.15 }}
-                  viewport={{ once: true }}
-                  className="flex items-start"
+                  variants={cardHoverVariants}
+                  className="relative p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-orange-400/30 transition-all duration-500 overflow-hidden"
                 >
-                  <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center mr-4 flex-shrink-0">
-                    <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-orange-500">{item.title}</h3>
-                    <p className="text-white/80">{item.subtitle}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+                  {/* Card background gradient */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+                  />
 
-            {/* CTA - Centered */}
-            <div className="mt-12 flex justify-center">
-              <motion.a
-                       onClick={() => {
-              const element = document.getElementById("WhyItWorks");
+                  {/* Icon container */}
+                  <div className="flex items-start gap-6">
+                    <motion.div
+                      whileHover={{ rotate: 360, scale: 1.1 }}
+                      transition={{ duration: 0.6 }}
+                      className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0 shadow-lg`}
+                    >
+                      <IconComponent className="w-7 h-7 text-white" />
+                    </motion.div>
+
+                    <div className="flex-1">
+                      <motion.h3
+                        className="text-xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors duration-300"
+                        initial={{ opacity: 0.8 }}
+                        whileHover={{ opacity: 1 }}
+                      >
+                        {item.title}
+                      </motion.h3>
+                      <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                        {item.subtitle}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Hover effect overlay */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+                    style={{ transform: "skewX(-20deg)" }}
+                  />
+                </motion.div>
+              </motion.div>
+            )
+          })}
+        </motion.div>
+
+        {/* Enhanced CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex justify-center"
+        >
+          <motion.a
+            onClick={() => {
+              const element = document.getElementById("WhyItWorks")
               if (element) {
-                element.scrollIntoView({ behavior: "smooth" });
+                element.scrollIntoView({ behavior: "smooth" })
               }
             }}
             draggable="false"
@@ -91,17 +253,14 @@ const WhoIsFor = () => {
             onContextMenu={(e) => e.preventDefault()}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-
-                className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-              >
-                Too real? Fix it. 
-              </motion.a>
-            </div>
-          </motion.div>
-        </div>
+            className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+          >
+            Too real? Fix it.
+          </motion.a>
+        </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default WhoIsFor;
+export default WhoIsFor

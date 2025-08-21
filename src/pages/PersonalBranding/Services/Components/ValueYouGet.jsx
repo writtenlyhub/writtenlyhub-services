@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image1 from "../assets/1.jpg";
 
 const ValueSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "https://i.ibb.co/9HbZr7Lg/1.png",
+    Image1,
     "https://i.ibb.co/gZ6PPGMF/4.png",
     "https://i.ibb.co/yBhbBhd7/3.png",
     "https://i.ibb.co/CpQLBsM3/5.png",
