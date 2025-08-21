@@ -78,7 +78,7 @@ const features = [
             Why choose us
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-           The advantages only<span className="text-orange-500">only my founder clients get   </span>
+           The advantages <span className="text-orange-500">only my founder clients get   </span>
           </h2>
           {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
             (aka why coaches choose us over everyone)

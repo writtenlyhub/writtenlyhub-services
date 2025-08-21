@@ -65,7 +65,7 @@ const PainPoints = () => {
  Why you're stuck
              </span>
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-              The founder visibility <span className="text-orange-500"> gaps killing your pipelines</span>
+              The founder visibility gaps<span className="text-orange-500"> killing your pipelines</span>
             </h2>
           </div>
         </motion.div>

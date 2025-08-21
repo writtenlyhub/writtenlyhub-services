@@ -24,7 +24,7 @@ You're building something that matters. But nobody knows it yet.
           </h3>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-4xl mx-auto">
-Inferior products are getting funded while yours gets overlooked. <br />
+ <br />
 Every day you wait = another opportunity for competitors to dominate your narrative. 
           </p>
 
