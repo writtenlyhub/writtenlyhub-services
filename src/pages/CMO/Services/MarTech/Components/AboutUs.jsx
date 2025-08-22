@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import focus from "../assets/focus.png";
 
 const AboutUs = () => {
   const features = [
@@ -40,7 +41,7 @@ const AboutUs = () => {
       ),
       title: "Implementation focus",
       description: "We track product adoption, not just lead volume.",
-      image: "https://i.postimg.cc/dDMvXFXt/Untitled-design-34.png"
+      image: focus
     },
     {
       icon: (

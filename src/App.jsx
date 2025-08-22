@@ -34,7 +34,7 @@ function App() {
 
         {/* CMO Routes */}
         <Route path="/cmoaas-techsaas" element={<FCMO />} />
-        <Route path="/cmo-martech" element={<MarTech />} /> 
+        <Route path="/cmoaas-martech" element={<MarTech />} /> 
         <Route path="/cmo-autoev" element={<AutoEV />} />
         <Route path="/cmo-startups" element={<Startups />} />
         <Route path="/cmo-nonprofits" element={<Nonprofits />} />

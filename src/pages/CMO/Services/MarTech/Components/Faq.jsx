@@ -54,7 +54,7 @@ const FAQ = () => {
           Frequently asked <span className="text-orange-500 ">questions</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
-          FAQs on CMO as-a-Service for MarTech founders
+          FAQs on CMO-as-a-Service for MarTech founders
         </p>
       </motion.div>
 
