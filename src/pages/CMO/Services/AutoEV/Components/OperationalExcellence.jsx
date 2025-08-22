@@ -15,7 +15,7 @@ const OperationalExcellence = () => {
           What makes us different?
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          <span className="text-orange-500 block">Why automotive leaders dump </span>other agencies for us
+          Why automotive leaders <span className="text-orange-500 block">dump other agencies for us</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           We speak your language and deliver measurable business impact

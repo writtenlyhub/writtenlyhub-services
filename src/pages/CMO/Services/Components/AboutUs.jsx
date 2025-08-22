@@ -40,7 +40,7 @@ const AboutUs = () => {
         </svg>
       ),
       title: "Anti Basic",
-      description: "We refuse to create generic content that blends into the sea of sameness flooding your industry",
+      description: "We refuse to create generic content that blends into the sea of sameness flooding your industry.",
       image: antiBasic
     },
     {

@@ -24,12 +24,15 @@ const CMOCloser = () => {
           </h3>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
-While you're explaining why your battery chemistry matters, competitors are closing pilot programs. 
+            Your EV tech could dominate fleets 
+          </p>
+          <p className="text-white text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
+            While you're explaining why your battery chemistry matters, competitors are closing pilot programs.
           </p>
           <p className="text-white text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
           Don't let better positioning beat better technology. 
           <br />
-          We have 2 automotive client spots opening this quarter. 
+          We have 2 automotive client spots opening this quarter.  
           </p>
           <div className="flex flex-col items-center">
             <div className="relative inline-block">
@@ -65,18 +68,18 @@ While you're explaining why your battery chemistry matters, competitors are clos
             </div>
           </div>
 
-          {/* <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="flex items-center justify-center gap-2 mt-4"
-          >
-            <FiClock className="text-orange-500 text-xl animate-pulse" />
-            <p className="text-white text-lg md:text-xl font-medium">
-              We have exactly <span className="text-orange-500 font-bold">3 MarTech client slots</span> opening in Q3
-            </p>
-          </motion.div> */}
+          <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="flex items-center justify-center gap-2 mt-2"
+            >
+              <FiClock className="text-orange-500 text-xl animate-pulse" />
+              <p className="text-white text-lg md:text-xl font-medium">
+                Only <span className="text-orange-500 font-bold">3 spots</span> left this quarter
+              </p>
+            </motion.div>
         </motion.div>
       </div>
     </section>

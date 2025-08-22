@@ -30,7 +30,7 @@ const CaseStudy2 = () => {
               </h3>
 
                <p className="text-white/80 text-lg mb-4">
-                <span className="font-semibold text-orange-500">Kreatr LinkedIn:</span>
+                <span className="font-semibold text-orange-500">Kreatr LinkedIn: </span>
                 The 133% increase in impressions, coupled with a 55-97% CTR across most posts and a steady rise in followers, indicates that our content is reaching more people, increasing in visibility and engagement.
               </p>
               

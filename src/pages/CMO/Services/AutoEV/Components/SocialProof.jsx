@@ -16,12 +16,11 @@ const companies = [
   { id: 10, name: "Look Forward Foundation", logo: "https://lookforward.in/wp-content/uploads/2023/07/LFF-Logo-1-Recovered-Recovered.png" },
 ];
 
-// Stats with multiplier flag added
 const stats = [
-  { id: 1, name: 'Average vs In-house', value: 70, isPercentage: true }, 
-  { id: 2, name: 'Improvement in investor', value: 2.5, isMultiplier: true },
-  { id: 3, name: 'Project delivery on time', value: 95, isPercentage: true },
-  { id: 4, name: 'Regulatory compliance issues', value: 0, isPercentage: true },
+  { id: 1, name: 'Average Cost Savings', value: 70, isPercentage: true }, 
+  { id: 2, name: 'Improvement in Deck Performance', value: 2.5, isMultiplier: true },
+  { id: 3, name: 'On Time Project Delivery', value: 95, isPercentage: true },
+  { id: 4, name: 'Regulatory Compliance Issues', value: 0, isZero: true },
 ];
 
 // Animation variants
@@ -37,13 +36,17 @@ const fadeInUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-// Updated Counter component
-const Counter = ({ value, isPercentage = false, isMultiplier = false }) => {
+const Counter = ({ value, isPercentage = false, isMultiplier = false, isZero = false }) => {
   const [count, setCount] = useState(0);
   const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
     if (inView) {
+      if (isZero) {
+        setCount(0);
+        return;
+      }
+      
       const duration = 2000;
       const increment = value / (duration / 16);
       let start = 0;
@@ -58,10 +61,12 @@ const Counter = ({ value, isPercentage = false, isMultiplier = false }) => {
       }, 16);
       return () => clearInterval(timer);
     }
-  }, [inView, value]);
+  }, [inView, value, isZero]);
 
   let formatted;
-  if (isMultiplier) {
+  if (isZero) {
+    formatted = 'Zero';
+  } else if (isMultiplier) {
     formatted = `${count.toFixed(1)}x`;
   } else if (value >= 1000000) {
     formatted = `${(count / 1000000).toFixed(count % 1000000 !== 0 ? 1 : 0)}M`;
@@ -75,12 +80,11 @@ const Counter = ({ value, isPercentage = false, isMultiplier = false }) => {
 
   return (
     <span ref={ref} className="text-orange-500 font-bold">
-      {formatted}{(!isPercentage && !isMultiplier) && '+'}
+      {formatted}{(!isPercentage && !isMultiplier && !isZero) && '+'}
     </span>
   );
 };
 
-// Infinite scrolling logos
 const InfiniteScrollLogos = () => {
   const scrollRef = useRef(null);
   const [x, setX] = useState(0);
@@ -99,7 +103,7 @@ const InfiniteScrollLogos = () => {
 
   return (
     <div
-      className="font-montserrat relative overflow-hidden py-12 md:py-20"
+      className="font-montserrat relative overflow-hidden py-12 md:py-20 "
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -108,6 +112,7 @@ const InfiniteScrollLogos = () => {
         <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#022150] to-transparent" />
       </div>
 
+      {/* ✅ Wrap this in a width container */}
       <div className="w-[90%] max-w-7xl mx-auto">
         <motion.div
           ref={scrollRef}
@@ -131,7 +136,6 @@ const InfiniteScrollLogos = () => {
   );
 };
 
-// Main SocialProof component
 const SocialProof = () => {
   return (
     <section className="bg-[#022150] text-white py-16">
@@ -161,11 +165,10 @@ const SocialProof = () => {
                   value={stat.value}
                   isPercentage={stat.isPercentage}
                   isMultiplier={stat.isMultiplier}
+                  isZero={stat.isZero}
                 />
               </p>
-              <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">
-                {stat.name}
-              </p>
+              <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">{stat.name}</p>
             </motion.div>
           ))}
         </motion.div>

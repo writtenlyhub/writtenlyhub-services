@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import antiBasic from "../assets/focus.png"
 
 const AboutUs = () => {
 const features = [
@@ -39,8 +40,8 @@ const features = [
         </svg>
       ),
       title: "Anti-Basic",
-      description: "We refuse to create generic content that blends into the sea of sameness flooding your industry",
-      image: "https://i.postimg.cc/dDMvXFXt/Untitled-design-34.png"
+      description: "We refuse to create generic content that blends into the sea of sameness flooding your industry.",
+      image: antiBasic
     },
     {
       icon: (

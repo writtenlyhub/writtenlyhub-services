@@ -36,7 +36,7 @@ const TestimonialSection = () => {
       {/* Header */}
       <div className="w-[90%] max-w-6xl mx-auto mb-12 md:mb-16 relative z-30 text-center px-4">
         <span className="text-orange-500 font-medium text-sm md:text-base uppercase tracking-widest">
-          Founder’s thoughts
+          Founders' thoughts
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
          Straight talk from <span className="text-orange-500">Automotive executives</span>
