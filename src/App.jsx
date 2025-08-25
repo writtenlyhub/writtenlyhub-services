@@ -38,7 +38,7 @@ function App() {
         <Route path="/cmoaas-autoev" element={<AutoEV />} />
         <Route path="/cmoaas-startups" element={<Startups />} />
         <Route path="/cmoaas-nonprofits" element={<Nonprofits />} />
-        <Route path="/cmo-incubators" element={<Incubators />} />
+        <Route path="/cmoaas-incubators" element={<Incubators />} />
 
 
      {/* Redirect all unmatched routes check */}

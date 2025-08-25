@@ -13,10 +13,10 @@ const WhoIsCMO = () => {
         className="relative z-10 text-center w-[80%] mx-auto "
       >
         <span className="text-orange-500 font-medium text-md uppercase tracking-widest">
-           Is this you?
+           Who is CMO-as-a-Service for
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-18">
-          <span className="text-orange-500">Who is </span>CMO-as-a-Service for
+          <span className="">Perfect fit clients (be honest with yourself)</span>
         </h2>
       </motion.div>
 

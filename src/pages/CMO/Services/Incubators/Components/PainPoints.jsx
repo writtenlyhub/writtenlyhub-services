@@ -11,7 +11,7 @@ const painPoints = [
     image: "https://i.ibb.co/R4GvKWx3/2.png"
   },
   {
-    text: "Startups keep asking for marketing help but we can't hire 30 CMOs." ,
+    text: "Series A decks fail because marketing sections look amateur." ,
     image: "https://i.ibb.co/8ghycmd3/3.png"
   },
   {

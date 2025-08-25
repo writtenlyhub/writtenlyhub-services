@@ -14,7 +14,6 @@ const items = [
       "Portfolio growth experts",
       "Investor-ready strategies",
       "Actually understand startups",
-      "Visual: A startup rocket ship with multiple stages, each stage labeled with growth milestones (Seed, Series A, etc.)"
     ]
   },
   {
@@ -23,7 +22,6 @@ const items = [
       "We handle everything",
       "No vendor juggling",
       "Campaigns that perform",
-      "Visual: A control panel showing multiple startup logos flowing smoothly through one unified marketing pipeline"
     ]
   },
   {
@@ -32,7 +30,6 @@ const items = [
       "Revenue-focused metrics",
       "Investor-grade reporting",
       "Growth you can measure",
-      "Visual: A clean dashboard showing upward trending lines for portfolio performance with funding milestone markers"
     ]
   },
   {
@@ -176,8 +173,8 @@ const items = [
 Our solutions
               </span>
                 <h2 className={`${isMobile ? 'text-2xl' : 'text-3xl md:text-5xl'} font-bold leading-tight text-white mb-4 md:mb-6`}>
-              Why incubators choose us
-                <span className="text-orange-500 block"> over agencies and in-house teams </span>
+              
+                <span className="text-orange-500 block"> Why incubators choose us </span>over agencies and in-house teams
               </h2>
 
               <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-white mb-6 md:mb-8`}>

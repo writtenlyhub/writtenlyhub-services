@@ -90,6 +90,13 @@ const Hero = () => {
         >
 Get fractional CMO expertise for your entire portfolio at 70% less cost than hiring individual marketing teams. 
         </motion.p>
+        <motion.p
+          variants={fadeInUp}
+          className="text-white/90 text-lg sm:text-xl mb-6 text-left w-[80%]"
+          style={{ opacity: isMobile ? 1 : opacity }}
+        >
+One contract. All startups covered. Investor-ready results. 
+        </motion.p>
 
         {/* CTA with social proof */}
         <motion.div 
