@@ -39,7 +39,7 @@ const TestimonialSection = () => {
           Founder’s thoughts
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-         Straight talk from <span className="text-orange-500">Automotive executives</span>
+         Straight from <span className="text-orange-500">the mission leaders</span>
         </h2>
       </div>
 

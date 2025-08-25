@@ -66,8 +66,8 @@ const PainPoints = () => {
                Founder challenges
             </span>
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-              The nonprofit marketing
-            <span className="text-orange-500 "> struggles every ED recognizes</span>
+              
+            <span className="text-orange-500 ">The nonprofit marketing struggles</span> every ED recognizes
             </h2>
             {/* <p className="text-gray-300 text-base md:text-xl">
               The unfiltered struggles we hear from leadership teams

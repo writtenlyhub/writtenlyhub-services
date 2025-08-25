@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import focus from "../assets/focus.png"
 
 const AboutUs = () => {
-const features = [
+  const features = [
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,7 +41,7 @@ const features = [
       ),
       title: "Impact driven",
       description: "Your success stories become our marketing strategy. ",
-      image: "https://i.postimg.cc/dDMvXFXt/Untitled-design-34.png"
+      image: focus
     },
     {
       icon: (
@@ -62,7 +63,7 @@ const features = [
       description: "Every campaign designed to build long-term donor relationships. ",
       image: "https://i.ibb.co/3mr0S2Gs/4-1.jpg"
     },
-{
+    {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
@@ -72,7 +73,6 @@ const features = [
       description: "Every piece we create is designed to move prospects closer to buying, not just consuming content.",
       image: "https://i.ibb.co/v6v8G6pq/9.jpg"
     }
-    
   ];
 
   return (
@@ -99,7 +99,8 @@ const features = [
             The marketing team <span className="text-orange-500">that learns your mission first</span>
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto text-xl">
-WrittenlyHub dives deep into understanding your cause, analyzing your donor base, and grasping your unique challenges before creating any campaigns.         </p>
+            WrittenlyHub dives deep into understanding your cause, analyzing your donor base, and grasping your unique challenges before creating any campaigns.         
+          </p>
         </motion.div>
 
         <motion.div
@@ -110,11 +111,11 @@ WrittenlyHub dives deep into understanding your cause, analyzing your donor base
           className="text-center mb-14"
         >
           <p className="text-gray-300 text-lg md:text-xl max-w-4xl mx-auto">
-Unlike marketing agencies that treat nonprofits like "businesses with a heart," we study your programs, understand your funding cycles, and respect the complexity of mission-driven work. 
-</p>
+            Unlike marketing agencies that treat nonprofits like "businesses with a heart," we study your programs, understand your funding cycles, and respect the complexity of mission-driven work. 
+          </p>
           <p className="max-w-3xl pt-2 text-orange-500 mx-auto text-xl">
-We create marketing that builds donor trust, campaigns that drive sustainable funding, and storytelling that honors your impact. 
-     </p>
+            We create marketing that builds donor trust, campaigns that drive sustainable funding, and storytelling that honors your impact. 
+          </p>
         </motion.div>
 
         {/* Bento Grid */}
@@ -138,7 +139,7 @@ We create marketing that builds donor trust, campaigns that drive sustainable fu
                   <img 
                     src={feature.image} 
                     alt={feature.title} 
-                    className={`object-cover ${[0, 3].includes(idx) ? 'md:w-1/2 w-full h-48 md:h-86' : 'w-full h-32 md:h-40'}`} 
+                    className={`object-cover ${[0, 3].includes(idx) ? 'md:w-1/2 w-full h-48 md:h-92' : 'w-full h-32 md:h-40'} ${idx === 5 ? 'mt-2' : ''}`} 
                   />
                   <div className={`${[0, 3].includes(idx) ? 'md:w-1/2' : ''} p-4 md:p-6 flex flex-col`}>
                     <div className="w-10 h-10 rounded-full bg-orange-400/10 flex items-center justify-center mb-4 text-orange-500">
@@ -160,7 +161,7 @@ We create marketing that builds donor trust, campaigns that drive sustainable fu
                   <img 
                     src={feature.image} 
                     alt={feature.title} 
-                    className="w-full h-32 md:h-46 object-cover" 
+                    className={`w-full h-32 md:h-46 object-cover ${idx === 5 ? 'mt-5' : ''}`} 
                   />
                 </>
               )}
@@ -185,7 +186,8 @@ We create marketing that builds donor trust, campaigns that drive sustainable fu
             />
           </motion.div>
         </motion.div>
-         {/* CTA Button */}
+
+        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

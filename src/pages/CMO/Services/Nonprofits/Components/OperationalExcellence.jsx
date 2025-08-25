@@ -15,7 +15,7 @@ const OperationalExcellence = () => {
 Operational excellence
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          <span className="text-orange-500 ">Why WrittenlyHub’s  </span> CMO is special
+          <span className="text-orange-500 ">Why WrittenlyHub’s CMO </span> is special
         </h2>
         {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           We don't just plan pretty campaigns, we make them work

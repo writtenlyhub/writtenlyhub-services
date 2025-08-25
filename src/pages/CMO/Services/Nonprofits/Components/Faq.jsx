@@ -18,11 +18,11 @@ const faqs = [
     answer: "Our team includes former nonprofit professionals who know how to balance emotional storytelling with ethical fundraising. We prioritize transparency, authenticity, and respect for your donors' values in every campaign."
   },
   {
-    question: "What metrics do CMO as-a-Service agencies actually track?",
+    question: "What metrics do CMO-as-a-Service agencies actually track?",
     answer: "We track what moves the needle: donor acquisition costs, recurring donation rates, donor lifetime value, and program awareness. You set the priorities, we measure the numbers that matter. No vanity metrics."
   },
   {
-    question: "How does your CMO as-a-Service team integrate with our team?",
+    question: "How does your CMO-as-a-Service team integrate with our team?",
     answer: "We become part of your nonprofit family. We learn your programs, understand your funding cycles, and collaborate seamlessly with your development team. No extra bureaucracy, just results that make board meetings enjoyable."
   },
   {
@@ -58,7 +58,7 @@ const faqs = [
           Frequently asked <span className="text-orange-500 ">questions</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
-          FAQs on CMO as-a-Service for EV founders 
+          FAQs on CMO-as-a-Service for EV founders 
         </p>
       </motion.div>
 

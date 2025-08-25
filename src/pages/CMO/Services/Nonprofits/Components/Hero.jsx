@@ -79,7 +79,7 @@ const Hero = () => {
           style={{ opacity: isMobile ? 1 : opacity }}
         >
           
-          <span className="text-orange-500  sm:inline ">Nonprofit CMO-as-a-Service that actually </span>understands donor psychology 
+          <span className="text-orange-500  sm:inline ">Nonprofit CMO-as-a-Service </span>that actually understands donor psychology 
         </motion.h1>
 
         {/* Subtext - Left aligned */}

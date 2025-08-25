@@ -14,7 +14,6 @@ const items = [
       "Former nonprofit marketing directors",
       "Donor psychology specialists",
       "Impact storytelling experts",
-      "Visual: A compass pointing toward both 'Mission' and 'Results' with a clear path"
     ]
   },
   {
@@ -23,7 +22,6 @@ const items = [
       "Campaign orchestration",
       "Multi-channel donor journeys",
       "Content that converts hearts to action",
-      "Visual: A nonprofit campaign pipeline showing seamless donor journey from awareness to advocacy"
     ]
   },
   {
@@ -32,7 +30,6 @@ const items = [
       "Donor acquisition & retention rates",
       "Program awareness lift",
       "Board-ready performance reports",
-      "Visual: A heart-shaped dashboard showing donor engagement metrics and impact measurements"
     ]
   },
   {
@@ -178,7 +175,7 @@ What we offer
               </span>
                 <h2 className={`${isMobile ? 'text-2xl' : 'text-3xl md:text-5xl'} font-bold leading-tight text-white mb-4 md:mb-6`}>
                When your cause
-                <span className="text-orange-500 block"> (meets strategic marketing prowess) </span>
+                <span className="text-orange-500 block"> meets strategic marketing prowess </span>
               </h2>
 
               <p className={`${isMobile ? 'text-lg' : 'text-xl'} text-white mb-6 md:mb-8`}>

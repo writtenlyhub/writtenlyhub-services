@@ -37,10 +37,10 @@ const steps = [
     title: "Mission deep dive",
     description: "We immerse ourselves in YOUR cause, values, and exactly why your mission matters to the world."
   },
-  {
-    title: "Competitor stalking",
-    description: "We analyze what your rivals are doing wrong so we can make you look like the obvious choice."
-  },
+  // {
+  //   title: "Competitor stalking",
+  //   description: "We analyze what your rivals are doing wrong so we can make you look like the obvious choice."
+  // },
   {
     title: "Competition check",
     description: "We study how others in your space engage donors, then find untapped opportunities for your organization."
@@ -79,7 +79,7 @@ const steps = [
    Timeline
         </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-   Marketing stress <span className="text-orange-500 block">mission success: Our proven path</span>
+    <span className="text-orange-500 block">Marketing stress → mission success: </span>Our proven path
         </h2>
           {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           A structured approach to technical marketing that delivers
