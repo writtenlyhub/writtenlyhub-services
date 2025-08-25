@@ -6,29 +6,35 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "Is there a contract with WrittenlyHub's CMO-as-a-Service?",
-      answer: "Yes, we do contracts because real marketing takes time to build momentum. But we're not into hostage situations, our contracts are reasonable, and good marketing should keep you because it works, not because you're legally trapped."
+      question: "What is a fractional CMO for Startups?",
+      answer:
+        "A fractional CMO is a seasoned marketing executive who works with your startup on a part-time basis, providing senior-level strategy and leadership without the full-time exec price tag. Think of it as getting a $250k CMO's brain for a fraction of the cost, perfect for startups that need strategic marketing leadership but can't justify (or afford) a full-time hire.",
     },
     {
-      question: "Will I really save 70% if I outsource to WrittenlyHub's automotive marketing?",
-      answer: "Hell yes, you'll save big. No hiring a small army of marketers who need six months to understand what regenerative braking is. Skip the 3-5 month trial-and-error phase with agencies that think EVs are just 'green cars.' We're your plug-and-play team that already speaks automotive. No overhead, no micromanaging, just premium results at a fraction of the cost."
+      question: "How much does a CMO-as-a-Service cost?",
+      answer:
+        "Our CMO-as-a-Service costs 70% less than hiring a full-time CMO. Instead of paying $200k+ for an in-house CMO (plus benefits, equity, and the hiring drama), you get strategic leadership and hands-on execution for a fraction of that cost. No overhead, no office politics, just results.",
     },
     {
-      question: "What are the key metrics you track to measure success?",
-      answer: "We track what actually matters: pilot program conversions, partnership deals, fleet inquiries, and revenue impact. You pick the goal (government contracts, fleet pilots, Series B funding), we measure the numbers that count. Real impact, zero BS metrics like 'brand awareness lift.'"
+      question: "What is the difference between a CMO-as-a-Service and a marketing agency?",
+      answer:
+        "Marketing agencies focus on executing specific tactics like campaigns and content creation, while a CMO-as-a-Service provides strategic leadership first, then guides the execution. Agencies need direction; we ARE the direction. We don't just run your ads, we figure out if you should be running ads at all.",
     },
     {
-      question: "How do you integrate with our team without creating more chaos?",
-      answer: "We become part of your automotive family. We study your supply chain like it's our own, treat your technology roadmap like gospel, and collaborate seamlessly with your engineering and sales teams. No extra meetings, no process overhauls, just results that make everyone look good."
+      question: "Do you work with all startup stages?",
+      answer:
+        "From seed-stage chaos to Series B scaling madness, we've got you covered. Our approach adapts to your stage, whether you need to establish product-market fit, build lead generation systems, or scale what's already working.",
     },
     {
-      question: "Do you actually understand automotive tech or just pretend to?",
-      answer: "We're the nerds who debate battery chemistry at dinner parties and know why 800V architecture matters. Half our team has worked with OEMs, suppliers, or mobility startups. We don't fake it till we make it, we already know your world inside out."
+      question: "How quickly will we see results?",
+      answer:
+        "Most clients see improvement in lead quality within 30-60 days, but we're not here to sell you magic beans. Real marketing takes time to compound, but you'll see strategic improvements and better direction from day one.",
     },
     {
-      question: "How hands-on will your team be without becoming micromanagers?",
-      answer: "We're elbow-deep in execution while you focus on building the future of mobility. From strategy to optimization, we handle it all. No 47-person conference calls, no asking what V2G means, we run the marketing show while you run your business. Easy as that."
-    }
+      question: "What makes WrittenlyHub different from other fractional CMO services?",
+      answer:
+        "We're not just strategic consultants who disappear after giving you a PowerPoint. We combine senior-level strategy with hands-on execution, provide dedicated account management, and actually give a damn about your results. Plus, we're not afraid to tell you when something isn't working, even if it hurts.",
+    },
   ];
 
   const toggleFAQ = (index) => {
@@ -58,7 +64,7 @@ const FAQ = () => {
           Frequently asked <span className="text-orange-500 ">questions</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
-          FAQs on CMO as-a-Service for EV founders 
+          FAQs on CMO-as-a-Service for startup founders
         </p>
       </motion.div>
 
@@ -76,18 +82,32 @@ const FAQ = () => {
             <button
               onClick={() => toggleFAQ(index)}
               className={`w-full text-left px-6 py-4 rounded-lg transition-all ${
-                activeIndex === index ? 'bg-[#0a2a6a]' : 'bg-[#0a2a6a]/70 hover:bg-[#0a2a6a]'
+                activeIndex === index
+                  ? "bg-[#0a2a6a]"
+                  : "bg-[#0a2a6a]/70 hover:bg-[#0a2a6a]"
               } border border-white/10`}
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-lg md:text-xl font-semibold text-white">{faq.question}</h3>
+                <h3 className="text-lg md:text-xl font-semibold text-white">
+                  {faq.question}
+                </h3>
                 <motion.div
                   animate={{ rotate: activeIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                   className="ml-4"
                 >
-                  <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <svg
+                    className="w-5 h-5 text-orange-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </motion.div>
               </div>
@@ -101,10 +121,10 @@ const FAQ = () => {
                   animate="open"
                   exit="collapsed"
                   variants={{
-                    open: { opacity: 1, height: 'auto' },
-                    collapsed: { opacity: 0, height: 0 }
+                    open: { opacity: 1, height: "auto" },
+                    collapsed: { opacity: 0, height: 0 },
                   }}
-                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
                   <div className="px-6 py-4 text-gray-300 text-xl">

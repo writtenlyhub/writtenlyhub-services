@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import focus from "../assets/focus.png"
 
 const AboutUs = () => {
 const features = [
@@ -40,7 +41,7 @@ const features = [
       ),
       title: "Execution ready",
       description: "Strategy plus hands-on work. No 'here's your plan, good luck.' ",
-      image: "https://i.postimg.cc/dDMvXFXt/Untitled-design-34.png"
+      image: focus
     },
     {
       icon: (
@@ -160,7 +161,7 @@ We think deeper, execute smarter, and refuse to make you sound like every other 
                   <img 
                     src={feature.image} 
                     alt={feature.title} 
-                    className="w-full h-32 md:h-44 object-cover" 
+                    className={`w-full h-32 md:h-44 object-cover ${feature.title === "Startup fluency " || feature.title === "Industry Insiders " ? "mt-10" : ""}`} 
                   />
                 </>
               )}
@@ -181,7 +182,7 @@ We think deeper, execute smarter, and refuse to make you sound like every other 
             <img 
               src={features[6].image} 
               alt={features[6].title} 
-              className="w-full h-32 md:h-49 object-cover" 
+              className="w-full h-32 md:h-44 mt-5 object-cover" 
             />
           </motion.div>
         </motion.div>

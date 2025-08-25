@@ -3,19 +3,19 @@ import { useState, useEffect } from "react";
 
 const painPoints = [
   {
-    text: "Our content strategy is just me posting random sh*t on LinkedIn",
+    text: "Our content strategy is just me posting random sh*t on LinkedIn.",
     image: "https://i.ibb.co/cXXDGQg8/1.png"
   },
   {
-    text: "Series A funding came with serious growth expectations" ,
+    text: "Series A funding came with serious growth expectations.",
     image: "https://i.ibb.co/R4GvKWx3/2.png"
   },
   {
-    text: "We know our audience exists... we just can't f*cking find them" ,
+    text: "We know our audience exists... we just can't f*cking find them.",
     image: "https://i.ibb.co/8ghycmd3/3.png"
   },
   {
-    text: "I'm the CEO, CMO, and janitor. Something's gotta give." ,
+    text: "I'm the CEO, CMO, and janitor. Something's gotta give.",
     image: "https://i.ibb.co/S4KkBJQC/4.png"
   },
   {

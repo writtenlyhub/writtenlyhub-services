@@ -94,7 +94,7 @@ const comparisons = [
           >
             <div className="relative">
               <div className="mb-8 pb-4 border-b border-white/10">
-                <h3 className="text-3xl font-bold text-white">Standard auto marketing agencies</h3>
+                <h3 className="text-3xl font-bold text-white">Standard Agencies</h3>
               </div>
               
               <ul className="space-y-5">
@@ -122,7 +122,7 @@ const comparisons = [
           >
             <div className="relative">
               <div className="mb-8 pb-4 border-b border-orange-500/30">
-                <h3 className="text-3xl font-bold text-orange-500">WrittenlyHub's CMO-as-a-Service Way</h3>
+                <h3 className="text-3xl font-bold text-orange-500">WrittenlyHub's Way</h3>
               </div>
               
               <ul className="space-y-5">

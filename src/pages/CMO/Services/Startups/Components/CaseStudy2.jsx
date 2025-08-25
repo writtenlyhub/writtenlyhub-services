@@ -29,10 +29,10 @@ const CaseStudy2 = () => {
                 How we made Kreatr's branding expertise impossible to ignore
               </h3>
 
-               <p className="text-white/80 text-lg mb-4">
+               {/* <p className="text-white/80 text-lg mb-4">
                 <span className="font-semibold text-orange-500">Kreatr LinkedIn:</span>
                 The 133% increase in impressions, coupled with a 55-97% CTR across most posts and a steady rise in followers, indicates that our content is reaching more people, increasing in visibility and engagement.
-              </p>
+              </p> */}
               
               {/* Stats Grid - 2 columns on sm+, 1 column on mobile */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4">
@@ -63,7 +63,7 @@ const CaseStudy2 = () => {
                     </svg>
                   }
                   label="Network Growth"
-                  value="3,731 new followers"
+                  value="3,731 new LinkedIn followers"
                 />
               </div>
 
