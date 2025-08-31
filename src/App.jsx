@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import PersonalBranding from './pages/PersonalBranding/Services/Branding';
 import FounderLedMarketing from './pages/PersonalBranding/FounderLedMarketing/Services/FounderLedMarketing';
 import TechAndSaaS from './pages/PersonalBranding/TechAndSaaS/Services/TechAndSaaS';
+import HNI from './pages/PersonalBranding/HNI/Services/HNI';
 
 // Content Engine Imports
 import ContentEngine from './pages/ContentEngine/index';
@@ -28,6 +29,7 @@ function App() {
         <Route path="/personalbranding" element={<PersonalBranding />} />
         <Route path="/founderledmarketing" element={<FounderLedMarketing />} />
         <Route path="/personalbranding-saas" element={<TechAndSaaS />} />
+        <Route path="/personalbranding-hni" element={<HNI />} />
 
         {/* Content Engine Route */}
         <Route path="/contentengine" element={<ContentEngine />} />
