@@ -20,23 +20,25 @@ const CMOCloser = () => {
           className="space-y-6"
         >
           <h3 className="text-orange-500 font-bold text-3xl md:text-5xl mb-6">
-            Your competition isn't waiting. Why are you?
+            Your competitors are building influence while you stay invisible 
           </h3>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-4xl mx-auto">
-            Right now, SaaS founders with inferior products are booking enterprise demos from LinkedIn daily.They're building authority while you're stuck explaining why your features matter.
+            Right now, less qualified leaders are becoming the industry voices that media quotes and boards recruit. 
           </p>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
-            
-            
-            Every month you delay costs roughly $25K in missed pipeline based on my client results.
-          </p>
+           They're attracting premium partnerships while you remain the best-kept secret in your sector. 
+           </p>
+
+            <p className="text-white text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
+          The leaders who start now begin building industry authority in 2 month. 
+            </p>
 
           <p className="text-white text-xl md:text-2xl mb-6 max-w-2xl mx-auto font-bold">
-            I'm accepting 3 new SaaS founders this quarter. Spots fill up because this system works.
-            <br /><br />
-            <span className="text-orange-500"> Is one of them yours?</span>
+I accept only 3 new high-net-worth clients this quarter. 
+<br /><br />
+            <span className="text-orange-500"> Is one of them you?</span>
            
           </p>
 
@@ -50,7 +52,7 @@ const CMOCloser = () => {
                 className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
               >
                 <span className="flex items-center">
-                  Claim my spot
+                  Claim my influence
                   <div className="ml-3 flex -space-x-2">
                     {profileImages.slice(0, 3).map((img, index) => (
                       <motion.div 

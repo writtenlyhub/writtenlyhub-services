@@ -17,7 +17,7 @@ const Founders = () => {
             Introducing the person behind it
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            Meet Astha - <span className="text-orange-500 ">The strategist who turns SaaS founders into industry authorities</span>
+            Meet the <span className="text-orange-500 ">strategist behind your <br /> industry influence</span>
           </h2>
         </motion.div>
 
@@ -53,28 +53,28 @@ const Founders = () => {
               </h3>
 
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've sat across from brilliant founders who've built products that could change entire industries, yet their LinkedIn profiles read like everyone else's template.
+                I'm the personal branding specialist who understands wealth psychology. 
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've worked with SaaS CEOs whose solutions deliver 10x ROI to clients, but their content gets lost in the noise while inferior competitors book all the demos.
+                I've worked with CEOs who run billion-dollar companies but struggle to articulate their strategic vision publicly. I've helped family office principals who make industry-shaping investments but remain invisible to the media who should be quoting them. 
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed italic mb-2">
-                Here's what I learned: Your product isn't the problem. How you talk about it is.
+               Here's what I learned: Successful leaders don't lack expertise - they lack strategic positioning. 
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I spent 4 years figuring out why some SaaS founders become industry voices while others stay invisible. The difference isn't better features - it's better positioning.
+                I spent 6 years figuring out how to transform private success into public authority without compromising discretion. The difference between leaders who get quoted and those who stay quiet isn't intelligence - it's intentional influence building. 
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've helped 20+ tech founders build personal brands that generate predictable pipeline. My clients don't just get more followers - they get more qualified demos, faster deal cycles, and premium pricing power.
+                I work with a maximum of 7 high-net-worth clients annually because this level of strategic positioning requires dedicated focus. 
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed italic mb-2">
-                The founders I work with don't want to become LinkedIn influencers. They want to become the obvious choice when prospects are ready to buy.
+                My clients don't want to become social media influencers. They want to become the industry authorities they already are - just with the recognition that matches their expertise. 
               </p>
             </div>
 
             <div className="mt-auto">
               <p className="text-base md:text-lg font-semibold text-orange-500 mb-4">
-                Your expertise got you this far. Let me help the right people discover it.
+               Your success speaks for itself. Let me help the right people hear it.
               </p>
               
               <div className="flex items-center gap-4 mb-6">

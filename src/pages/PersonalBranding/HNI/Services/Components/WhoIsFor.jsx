@@ -5,30 +5,37 @@ import { CheckCircle, Sparkles, TrendingUp, Users, Zap } from "lucide-react"
 
 const personas = [
   {
-    title: "SaaS founder earning $100K-500K ARR",
-    subtitle: "Who gets great product results but struggles with consistent lead generation from LinkedIn",
+    title: "Independent financial advisor ",
+    subtitle: "Managing $10-30M AUM who serves wealthy clients but struggles to attract new high-net-worth families",
     icon: TrendingUp,
     gradient: "from-orange-500 to-orange-700",
   },
   {
-    title: "Tech entrepreneur with 3+ years building \nsoftware",
-    subtitle: "Who has proven solutions but terrible LinkedIn visibility",
+    title: "Investment consultant",
+    subtitle: "At a boutique firm who has a solid track record but gets outshined by advisors at bigger firms online",
     icon: Zap,
     gradient: "from-orange-500 to-orange-700",
   },
   {
-    title: "B2B software founder targeting enterprise \nclients",
-    subtitle: "Who needs authority positioning to stop competing on price",
+    title: "Forbes-featured entrepreneur ",
+    subtitle: "With a successful exit who has no online presence that matches your offline achievements",
     icon: Users,
     gradient: "from-orange-500 to-orange-700",
   },
   {
-    title: "Enterprise software leader",
-    subtitle: "Who spends weekends creating content but gets likes from other founders instead of qualified leads",
+    title: "Private banking professional",
+    subtitle: "Who manages significant portfolios but needs personal authority to attract ultra-wealthy prospects",
     icon: Sparkles,
     gradient: "from-orange-500 to-orange-700",
   },
+  {
+    title: "Investment fund manager ",
+    subtitle: "Running smaller funds who needs visibility to attract institutional investors and family offices",
+    icon: TrendingUp,
+    gradient: "from-orange-500 to-orange-700",
+  },
 ]
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -165,7 +172,7 @@ const WhoIsFor = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight"
           >
-            You're perfect <span className="text-orange-500">for my system if you're a:</span>
+            This is the spot   <span className="text-orange-500">if you are a...</span>
           </motion.h2>
 
           <motion.div
@@ -255,7 +262,7 @@ const WhoIsFor = () => {
             whileInView={{ opacity: 1, y: 0 }}
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
           >
-            This is me
+            Solve this now
           </motion.a>
         </motion.div>
       </div>

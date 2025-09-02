@@ -6,34 +6,35 @@ const FAQ = () => {
 
 const faqs = [
   {
-    question: "What’s the ROI on building my personal brand?",
-    answer: "Our SaaS clients average 25+ qualified demos monthly within 90 days. That's roughly $300K+ in additional pipeline annually. One client went from 3 demos monthly to 22+ and closed an extra $250K ARR in 6 months. The math is simple: authority = higher close rates + premium pricing + no more 'you're too expensive' objections."
+    question: "How do you differentiate from other personal branding agencies that claim similar results?",
+    answer: "Most agencies are run by marketers who've never actually built anything. We've been in your shoes, freaking out over server crashes at 2 A.M. while trying to close deals. We don't do generic 'thought leadership' – we engineer reputation systems based on what actually opened doors for us."
   },
   {
-    question: "How much of my time will this take?",
-    answer: "Nothing! We do all the heavy lifting. You get to keep coding and building, while we make sure your brand is out there working for you. You won’t have to stop anything to post on social media every day."
+    question: "How hands-off can this be for me?",
+    answer: "About as hands-off as having a private chef. We need 60 minutes upfront to extract the good stuff from your brain, then maybe 15-20 minutes monthly to check in. Your job is to run your business – ours is to make sure people actually know who's running it."
   },
   {
-    question: "What makes this different from traditional agencies or other personal branding services?",
-    answer: "Well, we’ve worked with businesses like yours, so we’re not out here with some generic playbook. We understand B2B sales cycles, enterprise buyers, and why technical founders struggle with 'marketing speak.' Plus, we cap clients at 6 per quarter so you get actual attention, and not some rushed generic strategy."
+    question: "How do you tailor your approach to fit my personal tone and unique style?",
+    answer: "We don't force you into some 'thought leader' mold that makes everyone sound like they graduated from the same LinkedIn course. We figure out what makes you actually interesting, then amplify that instead of burying it under corporate-speak."
   },
   {
-    question: "What is SaaS branding?",
-    answer: "SaaS branding is how people feel about your product before they ever try it. It’s not just logos and colours, it’s how clearly you show up as a founder, what your product stands for, and why anyone should care. And we do this exactly by helping SaaS & tech founders build a personal brand that connects the dots so buyers think, 'Wait, this is the person behind that? I need to talk to them.'"
+    question: "What is the typical timeline for seeing measurable results?",
+    answer: "There's no magic timeline – this isn't overnight influencer fame, it's strategic positioning that actually lasts. Some clients see initial movement within weeks (people suddenly responding to messages they previously ignored), while others build more gradually. What matters is building a system that continues working long after trends die down."
   },
   {
-    question: "What does a personal branding agency do?",
-    answer: "We take your ideas, experience, and founder story and turn them into content that actually builds credibility. Think: smart LinkedIn posts, sharp positioning, and a presence that makes people want to work with you, not just your product. We help you step out from behind the dashboard and become the person your market trusts."
+    question: "How to pitch to high net worth individuals?",
+    answer: "Forget the sales pitch - HNIs respond to expertise and exclusivity, not desperation. At WrittenlyHub, we position you as the obvious choice through strategic LinkedIn authority, so qualified prospects reach out to you first. No cold calls, no networking events, just premium clients discovering your expertise naturally."
   },
   {
-    question: "How much do personal branding agencies charge?",
-    answer: "Anywhere from a few hundred bucks to $10K+ a month, depending on how serious they are. We keep it focused: no bloated retainers or random fluff. Just real strategy, real content, and measurable results for tech founders who want traction. If you care about ROI and not just 'looking good online,' we’re probably your people."
+    question: "What is considered a high-net-worth individual?",
+    answer: "Generally someone with $1M+ in investable assets, though we also focus on business leaders, executives, and wealth managers who control significant capital. We help them in personal branding so that their online presence matches their offline success."
   },
   {
-    question: "Is personal branding really worth it?",
-    answer: "If you're a tech/Saas founder? Absolutely. A strong personal brand means you don’t have to chase every deal—people come to you. Our clients see more leads, faster closes, and way more trust built before a sales call even happens. It’s not optional anymore. In a noisy market, being invisible is the real risk."
+    question: "What is meant by personal branding?",
+    answer: "Personal branding is how you're perceived professionally - your reputation, expertise, and authority in your field. Here at WrittenlyHub, we build personal brands that position high net worth individuals as industry leaders who attract premium opportunities. Think less 'influencer with morning routines' and more 'expert that family offices want on their advisory board.'"
   }
 ];
+
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -59,7 +60,7 @@ const faqs = [
           Need Answers?
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-          FAQs on personal branding<span className="text-orange-500 "> for SaaS founders</span>
+          FAQs on authority building<span className="text-orange-500 "> for HNIs </span>
         </h2>
         {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           Everything you need to know about our personal branding services

@@ -30,22 +30,31 @@ export default function HNI() {
       <Results />
       <PainPoints />
       <WhyChooseMe />
-     {/*<ValueProposition /> 
-      <ValueYouGet />
-      <OldNewWay />
-      <WhyChooseUs />
       <ProofOfWork />
       <MagneticLinkedIn />
       <WhoIsFor />
-      <WinsLookLike />
       <RevenueNumbers />
-      <WhyItWorks />
-      <CaseStudy />
       <Founders />
       <PricingCalculator />
       <CMOCloser />
       <FAQ />
-      <Footer /> */}
+      <Footer />
+    {/* <ValueProposition /> 
+      <ValueYouGet />
+      <OldNewWay />
+      <WhyChooseUs />
+      <ProofOfWork />
+      
+      
+      <WinsLookLike />
+      
+      <WhyItWorks />
+      <CaseStudy />
+      
+      
+      
+      
+       */}
     </Layout>
   );
 }

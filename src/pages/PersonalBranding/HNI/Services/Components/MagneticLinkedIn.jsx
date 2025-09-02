@@ -31,11 +31,11 @@ const MagneticLinkedIn = () => {
             className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4"
 
           >
-            How I make your <span className="text-orange-500 block">LinkedIn impossible to ignore </span>
+            The personal branding process that turns   <span className="text-orange-500 block">quiet success into loud authority</span>
           </motion.h2>
-          <p className="text-white/80 max-w-2xl mx-auto text-lg md:text-xl">
+          {/* <p className="text-white/80 max-w-2xl mx-auto text-lg md:text-xl">
 My 5-step system that turns invisible founders into industry authorities: 
-          </p>
+          </p> */}
         </div>
 
         {/* Grid Layout */}
@@ -43,29 +43,26 @@ My 5-step system that turns invisible founders into industry authorities:
           {/* Benefit Cards */}
           {[
     {
-    title: "Get MQLs even on vacation",
-    desc: "Personal branding that fills your demo calendar with enterprise buyers who already want what you built."
+    title: "Build a brand that works 24/7",
+    desc: "Your expertise generates opportunities even when you're focused on closing deals or finally enjoying your time off. "
   },
   {
-    title: "Turn more LinkedIn views into actual sales conversations",
-    desc: "Authority building that converts profile visitors into qualified prospects instead of letting them bounce to competitors."
+    title: "Scale your high-value connections through smart visibility",
+    desc: "LinkedIn approach that attracts 5-8 serious prospects monthly without cold outreach or networking fatigue. "
   },
   {
-    title: "Build your rep without sacrificing your weekends",
-    desc: "Complete LinkedIn handling so you can ship features while qualified prospects slide into your DMs."
+    title: "Free up your calendar while maintaining market presence",
+    desc: "Full LinkedIn oversight so you concentrate on client portfolios while qualified leads discover you organically. "
   },
   {
-    title: "See the numbers that actually matter to your business",
-    desc: "Track qualified demos, enterprise conversations, and deals that close - not likes and comments."
+    title: "Track the metrics that matter to your bottom line",
+    desc: "You gain clear visibility into how your personal brand directly contributes to business opportunities, with every metric tied to growth. "
   },
   {
-    title: "Charge what you're worth without the pushback",
-    desc: "Authority so strong that prospects stop asking for discounts and start asking how fast you can onboard them."
+    title: "Deliver high-value connections who come pre-sold  ",
+    desc: "No more explaining your value proposition. You attract people who already know your worth and have the budget to match. "
   },
-  {
-    title: "Get leads while you sleep",
-    desc: "A lead generation system that works 24/7, filling your pipeline even when you're not online."
-  },  
+    
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -95,14 +92,14 @@ My 5-step system that turns invisible founders into industry authorities:
           className="mt-20 text-center"
         >
           <div className="inline-flex flex-col items-center">
-            <p className="text-white/80 mb-6 text-lg">Ready to dominate your niche?</p>
+            {/* <p className="text-white/80 mb-6 text-lg">Ready to dominate your niche?</p> */}
             <button 
             onClick={() => window.open("https://calendly.com/asthaverma/build-your-personal-brand-with-me", "_blank")}
             draggable="false"
             onDragStart={(e) => e.preventDefault()}
             onContextMenu={(e) => e.preventDefault()}
 className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md  hover:text-orange-500 font-semibold rounded-full transition-colors duration-700">
-Get your leads 
+ Secure your spot
             </button>
           </div>
         </motion.div>

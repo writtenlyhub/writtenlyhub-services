@@ -10,7 +10,7 @@ const RevenueNumbers = () => {
              The numbers you would only dream about
           </span>
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            The real returns on  <span className="text-orange-500 ">your personal branding</span>
+            Tangible returns for <span className="text-orange-500 ">your intangible asset</span>
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ const RevenueNumbers = () => {
             onDragStart={(e) => e.preventDefault()}
             onContextMenu={(e) => e.preventDefault()}
 className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md  hover:text-orange-500 font-semibold rounded-full transition-colors duration-700">
-            Generate these numbers
+            Make this your normal
           </button>
         </div>
       </div>

@@ -28,11 +28,14 @@ const PricingCalculator = () => {
             Pricing calculator 
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            Get a sneak peek  <span className="text-orange-500">at your investment</span>
+            The investment behind <span className="text-orange-500">the influence  </span>
           </h2>
-          {/* <p className="text-gray-300 text-base md:text-xl">
+          <p className="font-bold text-base md:text-xl">
+            Pricing calculator domination 
+          </p>
+          <p className="text-gray-300 text-base md:text-xl">
             Limited availability: 3 spots remaining
-          </p> */}
+          </p>
         </motion.div>
 
         {/* Content */}
@@ -78,7 +81,7 @@ const PricingCalculator = () => {
           >
             <div className="mb-6">
               <span className="text-white/70">Starting at</span>
-              <p className="text-5xl font-bold text-orange-500 mt-2">$1,200<span className="text-white/70 text-xl">/month</span></p>
+              <p className="text-5xl font-bold text-orange-500 mt-2">$12,000<span className="text-white/70 text-xl">/month</span></p>
             </div>
             
             <motion.a
@@ -88,7 +91,7 @@ const PricingCalculator = () => {
               onContextMenu={(e) => e.preventDefault()}
               className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
             >
-              Book your call
+               Secure my spot
             </motion.a>
             
             <p className="text-white/60 mt-4 text-sm">

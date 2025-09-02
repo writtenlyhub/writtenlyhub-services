@@ -4,6 +4,7 @@ import MidImge from "./test.png";
 const ProofOfWork = () => {
   return (
     <div className="font-montserrat bg-[#022150] py-24 overflow-hidden">
+      
       {/* Wrap entire content in a single motion.div to reduce animation checks */}
       <motion.div
         initial="hidden"
@@ -29,7 +30,7 @@ const ProofOfWork = () => {
             Proof of work
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            The screenshots <span className="text-orange-500">(because talk is cheap)</span>
+            Engagement that will make people <span className="text-orange-500">Google you</span>
           </h2>
         </motion.div>
 
@@ -72,10 +73,11 @@ const ProofOfWork = () => {
             onDragStart={(e) => e.preventDefault()}
             onContextMenu={(e) => e.preventDefault()}
           className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700">
-            Get results like these
+            Get your results
           </button>
         </motion.div>
       </motion.div>
+      
     </div>
   );
 };

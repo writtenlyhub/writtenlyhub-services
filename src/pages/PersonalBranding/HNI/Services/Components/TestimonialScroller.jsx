@@ -44,42 +44,42 @@ const TestimonialScroller = () => {
 
   // Sample data for each scroller
   const scroller1Items = [
-    { type: "text", content: "2x more", subtext: "inbound demos", description: "$25K+ additional MRR" },
+    { type: "text", content: "2x more", subtext: "qualified prospects", description: "$150K+ additional revenue potential annually" },
     {
       type: "text",
       content: "30% higher",
-      subtext: "conversion rates",
-      description: "Stronger content strategy for warm leads",
+      subtext: "meeting conversion",
+      description: "$50K+ quarterly revenue boost",
     },
     { type: "image", content: "https://i.ibb.co/yByVX299/1.png", alt: "Corporate handshake" },
     { type: "image", content: "https://i.ibb.co/zVFxSjHM/4.png", alt: "Team collaboration" },
   ]
 
   const scroller2Items = [
-    { type: "text", content: "12+", subtext: "qualified calls monthly", description: "$100K+ pipeline consistently" },
+    { type: "text", content: "4+", subtext: "serious inquiries monthly", description: "$400K+ consistent pipeline" },
     {
       type: "text",
-      content: "40% better",
-      subtext: "engagement",
-      description: "Authority positioning that reduces price objections",
+      content: "3x",
+      subtext: "engagement from target clients",
+      description: "Recognized authority in your space",
     },
     { type: "image", content: "https://i.ibb.co/jt0CCgb/8.png", alt: "Content creator" },
     { type: "image", content: "https://i.ibb.co/fVTVSL7L/9.png", alt: "Remote meeting" },
-    { type: "text", content: "12+", subtext: "qualified calls monthly", description: "$100K+ pipeline consistently" },
+    { type: "text", content: "4+", subtext: "serious inquiries monthly", description: "$400K+ consistent pipeline" },
     {
       type: "text",
-      content: "40% better",
-      subtext: "engagement",
-      description: "Authority positioning that reduces price objections",
+      content: "3x",
+      subtext: "engagement from target clients",
+      description: "Recognized authority in your space",
     },
     { type: "image", content: "https://i.ibb.co/jt0CCgb/8.png", alt: "Content creator workflow" },
     { type: "image", content: "https://i.ibb.co/fVTVSL7L/9.png", alt: "Virtual collaboration" },
-    { type: "text", content: "12+", subtext: "qualified calls monthly", description: "$100K+ pipeline consistently" },
+    { type: "text", content: "4+", subtext: "serious inquiries monthly", description: "$400K+ consistent pipeline" },
     {
       type: "text",
-      content: "40% better",
-      subtext: "engagement",
-      description: "Authority positioning that reduces price objections",
+      content: "3x",
+      subtext: "engagement from target clients",
+      description: "Recognized authority in your space",
     },
     { type: "image", content: "https://i.ibb.co/jt0CCgb/8.png", alt: "Digital content creation" },
     { type: "image", content: "https://i.ibb.co/fVTVSL7L/9.png", alt: "Team video call" },
@@ -89,7 +89,7 @@ const TestimonialScroller = () => {
     { type: "image", content: "https://i.ibb.co/q32fqvFf/2.png", alt: "Business option" },
     { type: "image", content: "https://i.ibb.co/mdjFvfb/3.png", alt: "Office team" },
     { type: "image", content: "https://i.ibb.co/bgW0X4B5/10.png", alt: "Happy employees" },
-    { type: "text", content: "2x more", subtext: "inbound demos", description: "$25K+ additional MRR" },
+    { type: "text", content: "2x more", subtext: "qualified prospects", description: "$150K+ additional revenue potential annually" },
   ]
 
   // Duplicate items for seamless loop
