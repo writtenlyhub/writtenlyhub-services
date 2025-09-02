@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-white font-sans">
   <Helmet>
-  <title>WrittenlyHub - Your Content Creation Partner</title>
-  <meta name="description" content="Professional content creation services" />
+  <title>Founder-Led Marketing for LinkedIn Growth & Lead Generation</title>
+  <meta name="description" content="WrittenlyHub’s founder-led marketing builds authority and gets 25+ qualified leads monthly. Use founder-led marketing to turn LinkedIn into your revenue engine." />
 </Helmet>
 
 

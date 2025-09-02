@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-white font-sans">
-  <Helmet>
-  <title>WrittenlyHub - Your Content Creation Partner</title>
-  <meta name="description" content="Professional content creation services" />
-</Helmet>
+      <Helmet>
+        <title>Done for You Personal Branding LinkedIn Strategy for Coaches</title>
+        <meta
+          name="description"
+          content="WrittenlyHub's LinkedIn personal branding for coaches that delivers 15+ MQLs monthly with done-for-you content, positioning, and outreach. Book a strategy now!"
+        />
+      </Helmet>
 
-
-      <main className="overflow-hidden">
-        {children}
-      </main>
+      <main className="overflow-hidden">{children}</main>
     </div>
   );
 };

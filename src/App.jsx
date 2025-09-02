@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 // Personal Branding Imports
 import PersonalBranding from './pages/PersonalBranding/Services/Branding';
 import FounderLedMarketing from './pages/PersonalBranding/FounderLedMarketing/Services/FounderLedMarketing';
@@ -18,12 +18,28 @@ import Startups from './pages/CMO/Services/Startups/Startups';
 import Nonprofits from './pages/CMO/Services/Nonprofits/Nonprofits';
 import Incubators from './pages/CMO/Services/Incubators/Incubators';
 
+// tiny component to redirect to an external site
+const ExternalRedirect = ({ url }) => {
+  useEffect(() => {
+    // use replace to avoid keeping the redirected-from URL in history
+    window.location.replace(url);
+    // alternatively: window.location.href = url;
+  }, [url]);
+
+  return null; // nothing to render
+};
+
+
 function App() {
   return (
     <div className="font-biennale">
       <Routes>
         {/* Redirect '/' to writtenlyhub.com */}
         {/* <Route path="/" element={<Navigate to="https://www.writtenlyhub.com/" replace />} /> */}
+
+        {/* Redirect root (/) to external site using a real browser redirect */}
+        <Route path="/" element={<ExternalRedirect url="https://www.writtenlyhub.com" />} />
+
 
         {/* Personal Branding Routes */}
         <Route path="/personalbranding" element={<PersonalBranding />} />

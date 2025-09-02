@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-white font-sans ">
       <Helmet>
-        <title>WrittenlyHub - Startups</title>
-        <meta name="description" content="Professional content creation services" />
+        <title>CMO as a Service for Small, Mid, and Growing Startup Teams</title>
+        <meta name="description" content="WrittenlyHub’s CMO as a Service for startups boosts MQLs by 87% and conversions by 3.2x. Get senior-level marketing leadership and execution at 70% less cost." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* You can add more SEO tags or social previews if needed */}
       </Helmet>
