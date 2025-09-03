@@ -155,14 +155,17 @@ const PainPoints = () => {
         </div>
 
         {/* Centered Button */}
-        <div className="w-full text-center pt-4 pb-12">
-          <motion.div
-      
-className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-          >
-            Let's fix this
-          </motion.div>
-        </div>
+      <div className="w-full text-center pt-4 pb-12">
+        <motion.a
+          href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+        >
+          Let's fix this
+        </motion.a>
+      </div>
+
       </div>
     </div>
   );

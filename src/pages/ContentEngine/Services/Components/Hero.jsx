@@ -95,6 +95,9 @@ const Hero = () => {
           style={{ opacity: isMobile ? 1 : opacity }}
         >
           <a
+            href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
           >
             Get started today
@@ -117,6 +120,7 @@ const Hero = () => {
             </p>
           </div>
         </motion.div>
+
 
         {/* Video */}
         <motion.div 

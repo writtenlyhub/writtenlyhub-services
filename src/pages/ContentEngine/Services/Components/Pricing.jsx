@@ -93,15 +93,19 @@ const Pricing = () => {
               </ul>
             </div>
             
-            <button
-              className={`w-full py-3 rounded-lg font-semibold transition-colors duration-300 mt-auto ${
+            <a
+              href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`w-full py-3 pl-48 rounded-lg font-semibold transition-colors duration-300 mt-auto ${
                 pkg.highlighted
                   ? "bg-orange-500 hover:bg-orange-600 text-white"
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               Get started
-            </button>
+            </a>
+
           </motion.div>
         ))}
       </div>

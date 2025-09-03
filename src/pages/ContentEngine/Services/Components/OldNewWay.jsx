@@ -260,14 +260,17 @@ const OldNewWay = () => {
       </div>
 
       {/* CTA - Fixed at bottom */}
-      <div className="absolute bottom-16  left-1/2 transform -translate-x-1/2 text-center z-50">
-        <motion.button 
-          className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-    
-        >
-          Choose the winner
-        </motion.button>
-      </div>
+<div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center z-50">
+  <motion.a
+    href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+  >
+    Choose the winner
+  </motion.a>
+</div>
+
     </section>
   );
 };

@@ -300,12 +300,16 @@ const HowItWorks = () => {
         viewport={{ once: true }}
         className="w-[80%] mx-auto mt-12 md:mt-20 text-center"
       >
-        <button 
-className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+        <a
+          href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
         >
           See how it works
-        </button>
+        </a>
       </motion.div>
+
     </section>
   );
 };

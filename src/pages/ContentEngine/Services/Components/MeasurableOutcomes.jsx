@@ -52,13 +52,17 @@ const MeasurableOutcomes = () => {
             </div>
 
             {/* CTA - Aligned with text */}
-            <div className="mt-12 pl-11"> {/* Adjusted padding to align with text */}
-              <button 
-className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-              >
-                Stop missing out
-              </button>
-            </div>
+<div className="mt-12 pl-11"> {/* Adjusted padding to align with text */}
+  <a
+    href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+  >
+    Stop missing out
+  </a>
+</div>
+
           </motion.div>
 
           {/* Right Column - Image */}

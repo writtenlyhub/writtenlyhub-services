@@ -36,32 +36,36 @@ const CMOCloser = () => {
 
           <div className="flex flex-col items-center space-y-4">
             <div className="relative inline-block">
-              <button 
-                className="inline-block px-14 py-3 bg-orange-500 cursor-pointer hover:bg-white text-white text-md  hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-              >
-                <span className="flex items-center">
-                  Book your call now
-                  <div className="ml-3 flex -space-x-2">
-                    {profileImages.slice(0, 3).map((img, index) => (
-                      <motion.div 
-                        key={index}
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.5 + (index * 0.1) }}
-                        viewport={{ once: true }}
-                        className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border-2 border-white/30 overflow-hidden"
-                        style={{ zIndex: 10 - index }}
-                      >
-                        <img 
-                          src={img} 
-                          alt="Happy customer"
-                          className="w-full h-full object-cover"
-                        />
-                      </motion.div>
-                    ))}
-                  </div>
-                </span>
-              </button>
+              <a
+  href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-14 py-3 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+>
+  <span className="flex items-center">
+    Book your call now
+    <div className="ml-3 flex -space-x-2">
+      {profileImages.slice(0, 3).map((img, index) => (
+        <motion.div 
+          key={index}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 + (index * 0.1) }}
+          viewport={{ once: true }}
+          className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border-2 border-white/30 overflow-hidden"
+          style={{ zIndex: 10 - index }}
+        >
+          <img 
+            src={img} 
+            alt="Happy customer"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+      ))}
+    </div>
+  </span>
+</a>
+
             </div>
             <p className="text-white text-lg md:text-xl italic">
               3 spots left this quarter.

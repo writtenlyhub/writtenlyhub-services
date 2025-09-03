@@ -83,11 +83,15 @@ const CaseStudy = () => {
               </p>
 
               {/* Button */}
-              <button 
-className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+              <a
+                href="https://www.writtenlyhub.com/case-studies/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-60 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
               >
                 Get similar results
-              </button>
+              </a>
+
             </div>
             
             {/* Image (Right Side) */}

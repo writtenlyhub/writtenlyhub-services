@@ -77,16 +77,20 @@ const ServicesOffering = () => {
 
       {/* CTA Button */}
       <div className="w-full mt-12 md:mt-16 text-center px-4">
-        <motion.button
+        <motion.a
+          href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
+          className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
         >
           Start scaling today
-        </motion.button>
+        </motion.a>
       </div>
+
     </section>
   );
 };
