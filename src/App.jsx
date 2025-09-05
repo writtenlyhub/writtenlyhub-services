@@ -9,6 +9,7 @@ import HNI from './pages/PersonalBranding/HNI/Services/HNI';
 
 // Content Engine Imports
 import ContentEngine from './pages/ContentEngine/index';
+import ContentEngineB2B from './pages/ContentEngineB2B/index';
 
 // CMO Imports
 import FCMO from './pages/CMO/Services/FCMO'
@@ -48,7 +49,9 @@ function App() {
         <Route path="/personalbranding-hni" element={<HNI />} />
 
         {/* Content Engine Route */}
-        <Route path="/contentengine" element={<ContentEngine />} />
+        <Route path="/contentengine-nonprofits" element={<ContentEngine />} />
+        <Route path="/contentengine-b2bsaas" element={<ContentEngineB2B />} />
+
 
         {/* CMO Routes */}
         <Route path="/cmoaas-techsaas" element={<FCMO />} />
