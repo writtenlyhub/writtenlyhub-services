@@ -10,6 +10,7 @@ import HNI from './pages/PersonalBranding/HNI/Services/HNI';
 // Content Engine Imports
 import ContentEngine from './pages/ContentEngine/index';
 import ContentEngineB2B from './pages/ContentEngineB2B/index';
+import ContentEngineHealthcare from './pages/ContentEngineHealthcare/index';
 
 // CMO Imports
 import FCMO from './pages/CMO/Services/FCMO'
@@ -51,6 +52,7 @@ function App() {
         {/* Content Engine Route */}
         <Route path="/contentengine-nonprofits" element={<ContentEngine />} />
         <Route path="/contentengine-b2bsaas" element={<ContentEngineB2B />} />
+        <Route path="/contentengine-healthcare" element={<ContentEngineHealthcare />} />
 
 
         {/* CMO Routes */}
