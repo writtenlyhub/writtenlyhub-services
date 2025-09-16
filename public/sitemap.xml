@@ -10,9 +10,101 @@
   <loc>https://writtenlyhub.com/about/</loc>
   <lastmod>2025-07-28</lastmod>
   <changefreq>weekly</changefreq>
-  <priority>0.9</priority>
+  <priority>0.6</priority>
 </url>
+
+<!-- Offer Microsite Routes (React Router) -->
+<!-- Note: Root (/) redirects to www; omitted intentionally to avoid cross-domain canonical conflicts. -->
 <url>
+  <loc>https://offer.writtenlyhub.com/personalbranding</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/founderledmarketing</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/personalbranding-saas</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/personalbranding-hni</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+
+<!-- Content Engine -->
+<url>
+  <loc>https://offer.writtenlyhub.com/contentengine-nonprofits</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/contentengine-b2bsaas</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/contentengine-healthcare</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/contentengine-fintech</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+
+<!-- CMOaaS -->
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-techsaas</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-martech</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-autoev</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-startups</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-nonprofits</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+<url>
+  <loc>https://offer.writtenlyhub.com/cmoaas-incubators</loc>
+  <lastmod>2025-09-15</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+ </url>
+
+</urlset>
   <loc>https://writtenlyhub.com/services/</loc>
   <lastmod>2025-07-28</lastmod>
   <changefreq>weekly</changefreq>

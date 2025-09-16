@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import apollo from "../assets/apolloChart.png";
+import shriramgraph from "../assets/shriramgraph.png";
 
 const ValueSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    apollo,
+    shriramgraph,
      "https://i.ibb.co/WpKshsMn/Bar-Line-Chart.png",
     "https://i.ibb.co/wr08D7ss/Area-graph-2.png",
     "https://i.ibb.co/S4zKHHHY/Untitled-design-36.png",
