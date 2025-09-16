@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import LeadersWhoNeedUs  from "../assets/LeadersWhoNeedUs.gif";
+import LeadersWhoNeedUs from "../assets/LeadersWhoNeedUs.gif";
 
 const WhoIsCMO = () => {
   return (
@@ -13,10 +13,11 @@ const WhoIsCMO = () => {
         className="relative z-10 text-center w-[80%] mx-auto "
       >
         <span className="text-orange-500 font-medium text-md uppercase tracking-widest">
-          Leaders who need us  
+          Leaders who need us
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-18">
-          <span className="text-orange-500">Perfect fit clients </span>(be honest with yourself)
+          <span className="text-orange-500">Perfect fit clients </span>(be
+          honest with yourself)
         </h2>
       </motion.div>
 
@@ -33,31 +34,30 @@ const WhoIsCMO = () => {
           alt="Leaders who need us"
           className="w-full h-auto object-contain pointer-events-none select-none"
           draggable={false}
-          onContextMenu={(e) => e.preventDefault()}
+          onContextMenu={e => e.preventDefault()}
         />
       </motion.div>
 
-       <span className="font-medium text-md text-center block">
-          If this describes your reality, we should talk. 
-        </span>
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-4"
+      <span className="font-medium text-md text-center block">
+        If this describes your reality, we should talk.
+      </span>
+      {/* CTA Button */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="text-center mt-4"
+      >
+        <a
+          href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
         >
-          <a
-            href="https://outlook.office.com/book/G7dffb8790bab4b95b7e8fd20179d2514@writtenlyhub.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-          >
-Let's talk
-          </a>
-        </motion.div>
-
+          Let's talk
+        </a>
+      </motion.div>
     </section>
   );
 };

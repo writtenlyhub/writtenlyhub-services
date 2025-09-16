@@ -3,23 +3,26 @@ import { motion } from "framer-motion";
 const TestimonialSlider = () => {
   const testimonials = [
     {
-      quote: "It's hard to find a team that gets medical content right, but WrittenlyHub really delivered. Their work on our lab test and category pages was accurate, easy to read, and thoughtfully written. You could tell they paid close attention to the details, and it made a real difference in the way our content connects with users.",
+      quote:
+        "It's hard to find a team that gets medical content right, but WrittenlyHub really delivered. Their work on our lab test and category pages was accurate, easy to read, and thoughtfully written. You could tell they paid close attention to the details, and it made a real difference in the way our content connects with users.",
       name: "Apollo 24/7",
       role: "",
-      logo: "https://images.apollo247.in/images/icons/apollo247.svg"
+      logo: "https://images.apollo247.in/images/icons/apollo247.svg",
     },
     {
-      quote: "For nearly two years, WrittenlyHub has supported us with well-written study abroad content and student essays. Their strategic support, consistent quality, and deep understanding of academic tone helped us scale high-conversion pages and improve student outcomes across regions.",
+      quote:
+        "For nearly two years, WrittenlyHub has supported us with well-written study abroad content and student essays. Their strategic support, consistent quality, and deep understanding of academic tone helped us scale high-conversion pages and improve student outcomes across regions.",
       name: "Upgrad Abroad",
       role: "",
-      logo: "https://ik.imagekit.io/upgrad1/abroad-images/logo/upGrad_logo_web.svg?tr=w-118,q-70"
+      logo: "https://ik.imagekit.io/upgrad1/abroad-images/logo/upGrad_logo_web.svg?tr=w-118,q-70",
     },
     {
-      quote: "We sought WrittenlyHub for our content writing requirements. Their team worked with patience and care, clearly understanding our Giver-seeker programming and thoughtfully capturing the essence of our work through well-crafted content. We value them as important partners in our growth journey.",
+      quote:
+        "We sought WrittenlyHub for our content writing requirements. Their team worked with patience and care, clearly understanding our Giver-seeker programming and thoughtfully capturing the essence of our work through well-crafted content. We value them as important partners in our growth journey.",
       name: "Look Forward Foundation",
       role: "",
-      logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png"
-    }
+      logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png",
+    },
   ];
 
   // Duplicate testimonials for infinite scroll effect
@@ -33,7 +36,10 @@ const TestimonialSlider = () => {
           Client Testimonials
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-          Leaders <span className="text-orange-500">who scaled through our content</span>
+          Leaders{" "}
+          <span className="text-orange-500">
+            who scaled through our content
+          </span>
         </h2>
       </div>
 
@@ -42,7 +48,7 @@ const TestimonialSlider = () => {
         {/* Fade effect on left and right */}
         <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-[#022150] to-transparent z-20"></div>
         <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-[#022150] to-transparent z-20"></div>
-        
+
         {/* Infinite Scrolling Cards */}
         <motion.div
           className="flex gap-6 md:gap-8 w-max"
@@ -62,9 +68,9 @@ const TestimonialSlider = () => {
             >
               {/* Quote */}
               <div className="mb-6 flex-grow">
-                <svg 
-                  className="w-8 h-8 text-orange-500 mb-4" 
-                  fill="currentColor" 
+                <svg
+                  className="w-8 h-8 text-orange-500 mb-4"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -77,15 +83,17 @@ const TestimonialSlider = () => {
               {/* Profile */}
               <div className="flex items-center justify-between pt-4 border-t border-white/10">
                 <div className="flex items-center gap-4">
-                  <img 
-                    src={testimonial.logo} 
+                  <img
+                    src={testimonial.logo}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-contain bg-white p-1 border-2 border-orange-500"
                   />
                   <div>
                     <h4 className="text-white font-bold">{testimonial.name}</h4>
                     {testimonial.role && (
-                      <p className="text-white/80 text-sm">{testimonial.role}</p>
+                      <p className="text-white/80 text-sm">
+                        {testimonial.role}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -98,7 +106,7 @@ const TestimonialSlider = () => {
       {/* CTA Button */}
       <div className="w-full mt-12 md:mt-16 text-center px-4">
         <motion.a
-          href="https://outlook.office.com/book/G7dffb8790bab4b95b7e8fd20179d2514@writtenlyhub.com/"
+          href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0 }}

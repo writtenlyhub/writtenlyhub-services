@@ -318,7 +318,7 @@ const AboutUs = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://outlook.office.com/book/G7dffb8790bab4b95b7e8fd20179d2514@writtenlyhub.com/"
+            href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"

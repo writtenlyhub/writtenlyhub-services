@@ -103,9 +103,9 @@ const AboutUs = () => {
           />
         </svg>
       ),
-      title: "Stage adaptive",
+      title: "Industry Insiders ",
       description:
-        "From MVP validation to Series B scaling, we adjust with you. ",
+        "We become experts in your niche before writing a single word, no generic templates here.",
       image: "https://i.ibb.co/vvD2vsRC/19.png",
     },
     {
@@ -124,9 +124,9 @@ const AboutUs = () => {
           />
         </svg>
       ),
-      title: "Industry Insiders ",
+      title: "Revenue Focus",
       description:
-        "We become experts in your niche before writing a single word, no generic templates here.",
+        "Every piece we create is designed to move prospects closer to buying, not just consuming content.",
       image: "https://i.ibb.co/3mr0S2Gs/4-1.jpg",
     },
     {
@@ -145,9 +145,9 @@ const AboutUs = () => {
           />
         </svg>
       ),
-      title: "Revenue Focus",
+      title: "Stage adaptive",
       description:
-        "Every piece we create is designed to move prospects closer to buying, not just consuming content.",
+        "From MVP validation to Series B scaling, we adjust with you. ",
       image: "https://i.ibb.co/v6v8G6pq/9.jpg",
     },
   ];
@@ -318,7 +318,7 @@ const AboutUs = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://outlook.office.com/book/G7dffb8790bab4b95b7e8fd20179d2514@writtenlyhub.com/"
+            href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
