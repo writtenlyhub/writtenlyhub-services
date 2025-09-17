@@ -5,7 +5,7 @@ const USP = () => {
     "We become your automotive marketing strike force, not just another shiny agency logo on your deck.",
     "We track pilot conversions and partnership deals, not just how many people downloaded your sustainability report.",
     "Marketing built by people who've actually driven EVs and understand supply chains, not just read about them.",
-    "Zero tolerance for 'so your product is electric, right?' conversations. Not happening here."
+    "Zero tolerance for 'so your product is electric, right?' conversations. Not happening here.",
   ];
 
   return (
@@ -34,7 +34,10 @@ const USP = () => {
               </span>
 
               <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-8 leading-tight">
-                Not your typical <span className="text-orange-500 block sm:inline">automotive marketing team</span>
+                Not your typical{" "}
+                <span className="text-orange-500 block sm:inline">
+                  automotive marketing team
+                </span>
               </h2>
 
               <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
@@ -48,11 +51,23 @@ const USP = () => {
                     className="flex items-start gap-3 sm:gap-4"
                   >
                     <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-orange-500/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </div>
-                    <p className="text-white text-base sm:text-lg md:text-xl">{point}</p>
+                    <p className="text-white text-base sm:text-lg md:text-xl">
+                      {point}
+                    </p>
                   </motion.div>
                 ))}
               </div>
@@ -65,7 +80,7 @@ const USP = () => {
                 className="mt-6 sm:mt-8"
               >
                 <a
-                  href="https://www.writtenlyhub.com/call"
+                  href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
@@ -84,8 +99,8 @@ const USP = () => {
                 viewport={{ once: true }}
                 className="w-full aspect-[4/3] rounded-xl overflow-hidden border-2 border-white/10 relative"
               >
-                <img 
-                  src="https://i.ibb.co/YrtKjSY/staright-line.png" 
+                <img
+                  src="https://i.ibb.co/YrtKjSY/staright-line.png"
                   alt="Automotive marketing strategy"
                   className="w-full h-full object-cover"
                 />
@@ -99,8 +114,8 @@ const USP = () => {
                 viewport={{ once: true }}
                 className="w-full aspect-[4/3] rounded-xl overflow-hidden border-2 border-white/10 relative"
               >
-                <img 
-                  src="https://i.ibb.co/mVHGk4tX/bar-graphs.png" 
+                <img
+                  src="https://i.ibb.co/mVHGk4tX/bar-graphs.png"
                   alt="Automotive growth metrics"
                   className="w-full h-full object-cover"
                 />

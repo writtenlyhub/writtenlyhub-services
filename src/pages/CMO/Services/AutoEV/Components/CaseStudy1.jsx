@@ -126,7 +126,7 @@ const CaseStudy1 = () => {
               {/* Button */}
               <button
                 onClick={() =>
-                  window.open("https://www.writtenlyhub.com/call", "_blank")
+                  window.open("https://calendly.com/asthaverma/build-your-personal-brand-with-me", "_blank")
                 }
                 draggable="false"
                 onDragStart={e => e.preventDefault()}

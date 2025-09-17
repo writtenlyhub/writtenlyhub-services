@@ -30,13 +30,12 @@ const TestimonialSection = () => {
       role: "Content Lead, Apollo 24/7",
       logo: "https://images.apollo247.in/images/icons/apollo247.svg",
     },
-    ,
     {
       quote:
-        "From the very beginning, it felt like WrittenlyHub was a team I could trust like an extended arm helping us, and not an external agency! The collaboration was marked by authenticity, care, and reliable support that made project execution seamless.",
+        "From the start, WrittenlyHub felt like a team I could trust like an extended arm helping us, and not an external agency! The project execution was seamless, marked by authenticity, care, and reliable support.",
       name: "Camille Duboz",
       role: "Growth Specialist, Zeffy",
-      logo: "https://images.squarespace-cdn.com/content/v1/58ab72dd20099e7487a612f9/f563eb4b-5693-40a5-84cc-a184fbc0b9d6/Mesa-de-trabajo-2-300x300.png?format=2500w",
+      logo: "https://support.zeffy.com/hs-fs/hubfs/afe98758-4209-48ca-816b-e1d26fee86fa-1.png?width=156&height=48&name=afe98758-4209-48ca-816b-e1d26fee86fa-1.png",
     },
   ];
 

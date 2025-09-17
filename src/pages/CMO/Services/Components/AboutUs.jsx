@@ -247,22 +247,24 @@ const AboutUs = () => {
                 </>
               ) : (
                 <>
-                  <div className="p-4 md:p-6 flex flex-col">
-                    <div className="w-10 h-10 rounded-full bg-orange-400/10 flex items-center justify-center mb-4 text-orange-500">
-                      {feature.icon}
+                  <div className=" flex flex-col justify-between flex-1">
+                    <div className="p-4 md:p-6">
+                      <div className="w-10 h-10 rounded-full bg-orange-400/10 flex items-center justify-center mb-4 text-orange-500">
+                        {feature.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-300 text-sm">
+                        {feature.description}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      {feature.description}
-                    </p>
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-full h-32 md:h-44 object-cover mt-4"
+                    />
                   </div>
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-32 md:h-44 object-cover"
-                  />
                 </>
               )}
             </motion.div>

@@ -12,10 +12,13 @@ const OperationalExcellence = () => {
         className="w-[80%] mx-auto mb-16 relative z-30 text-center"
       >
         <span className="text-orange-500 font-medium text-md uppercase tracking-widest">
-How we’re better
+          How we’re better
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          <span className="text-orange-500 ">Why other marketing agencies </span> can’t even come close 
+          <span className="text-orange-500 ">
+            Why other marketing agencies{" "}
+          </span>{" "}
+          can’t even come close
         </h2>
         {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           We don't just plan pretty campaigns, we make them work
@@ -40,13 +43,22 @@ How we’re better
                 "We build portfolio-wide systems that scale with growth",
                 "We own results like your portfolio depends on it (because it does)",
                 "Transparent AF about what's working and what isn't",
-                "No 'let's circle back' BS - just growth that investors notice"
-
+                "No 'let's circle back' BS - just growth that investors notice",
               ].map((point, index) => (
                 <div key={index} className="flex items-start">
                   <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center mr-3 flex-shrink-0">
-                    <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <svg
+                      className="w-4 h-4 text-orange-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
                   <p className="text-white text-lg md:text-xl">{point}</p>
@@ -57,12 +69,12 @@ How we’re better
             {/* CTA - Aligned with text */}
             <div className="mt-12 pl-11">
               <a
-                href="https://www.writtenlyhub.com/call"
+                href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
               >
-Fund this move 
+                Fund this move
               </a>
             </div>
           </motion.div>
@@ -76,8 +88,8 @@ Fund this move
             className="flex-1"
           >
             <div className="relative rounded-xl overflow-hidden border-2 border-orange-400/30 hidden md:block">
-              <img 
-                src="https://i.ibb.co/M5grSycn/Scatter-Chart.png" 
+              <img
+                src="https://i.ibb.co/M5grSycn/Scatter-Chart.png"
                 alt="Marketing performance graph"
                 className="w-full h-auto object-cover"
               />

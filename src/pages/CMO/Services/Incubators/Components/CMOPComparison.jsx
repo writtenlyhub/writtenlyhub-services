@@ -15,10 +15,10 @@ const blurFadeItem = {
   show: {
     opacity: 1,
     filter: "blur(0px)",
-    transition: { 
+    transition: {
       duration: 0.6,
-      ease: [0.16, 0.77, 0.47, 0.97]
-    }
+      ease: [0.16, 0.77, 0.47, 0.97],
+    },
   },
 };
 
@@ -26,28 +26,31 @@ const CMOPComparison = () => {
   const comparisons = [
     {
       traditional: 'One-size-fits-all campaigns for "startups"',
-      writtenly: "70% cost savings vs hiring in-house teams (actually proven)"
+      writtenly: "70% cost savings vs hiring in-house teams (actually proven)",
     },
     {
       traditional: "Juggling 5+ vendors for basic functions",
-      writtenly: "3x faster portfolio growth rates - not vanity metrics"
+      writtenly: "3x faster portfolio growth rates - not vanity metrics",
     },
     {
       traditional: "Junior teams learning on your dime",
-      writtenly: "85% of our startups hit the next funding milestone"
+      writtenly: "85% of our startups hit the next funding milestone",
     },
     {
       traditional: "Pretty reports, subpar results",
-      writtenly: "2.5x better lead quality than those other clowns"
+      writtenly: "2.5x better lead quality than those other clowns",
     },
     {
       traditional: "Age-old boomer strategies",
-      writtenly: "40% faster time-to-market while they're still strategizing"
-    }
+      writtenly: "40% faster time-to-market while they're still strategizing",
+    },
   ];
 
   return (
-    <section id="CMOPComparison" className="font-montserrat relative w-full bg-[#022150] py-12 md:py-20 overflow-hidden">
+    <section
+      id="CMOPComparison"
+      className="font-montserrat relative w-full bg-[#022150] py-12 md:py-20 overflow-hidden"
+    >
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-64 h-64 rounded-full bg-orange-500/10 blur-3xl"></div>
@@ -67,11 +70,12 @@ const CMOPComparison = () => {
           Compare services
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4">
-          Most incubator marketing agencies vs. <span className="text-orange-500">what actually works</span>
+          Most incubator marketing agencies vs.{" "}
+          <span className="text-orange-500">what actually works</span>
         </h2>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -86,18 +90,27 @@ const CMOPComparison = () => {
           >
             <div className="relative">
               <div className="mb-8 pb-4 border-b border-white/10">
-                <h3 className="text-3xl font-bold text-white">Everyday marketing agencies</h3>
+                <h3 className="text-3xl font-bold text-white">
+                  Everyday marketing agencies
+                </h3>
               </div>
-              
+
               <ul className="space-y-5">
                 {comparisons.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className="flex items-start gap-4"
-                  >
+                  <li key={index} className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-full bg-white/10 border border-white/30 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      <svg
+                        className="w-4 h-4 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M6 18L18 6M6 6l12 12"
+                        />
                       </svg>
                     </div>
                     <p className="text-white/90 text-lg">{item.traditional}</p>
@@ -114,18 +127,27 @@ const CMOPComparison = () => {
           >
             <div className="relative">
               <div className="mb-8 pb-4 border-b border-orange-500/30">
-                <h3 className="text-3xl font-bold text-orange-500">WrittenlyHub's Way</h3>
+                <h3 className="text-3xl font-bold text-orange-500">
+                  WrittenlyHub's Way
+                </h3>
               </div>
-              
+
               <ul className="space-y-5">
                 {comparisons.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className="flex items-start gap-4"
-                  >
+                  <li key={index} className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-full bg-orange-500/10 border border-orange-500/30 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="w-4 h-4 text-orange-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </div>
                     <p className="text-white/90 text-lg">{item.writtenly}</p>
@@ -137,17 +159,17 @@ const CMOPComparison = () => {
         </div>
 
         {/* CTA */}
-        <motion.div 
+        <motion.div
           variants={blurFadeItem}
           className="flex justify-center mt-16"
         >
           <a
-            href="https://www.writtenlyhub.com/call"
+            href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
           >
-            Prove it 
+            Prove it
           </a>
         </motion.div>
       </motion.div>

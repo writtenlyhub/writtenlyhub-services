@@ -81,7 +81,7 @@ const Hero = () => {
           <span className="text-orange-500  sm:inline ">
             Stop losing deals{" "}
           </span>
-          becauseyour marketing can't explain your tech
+          because your marketing can't explain your tech
         </motion.h1>
 
         {/* Subtext - Left aligned */}
