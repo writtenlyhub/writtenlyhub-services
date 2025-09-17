@@ -6,7 +6,7 @@ const results = [
   "Premium partnership opportunities come to you",
   "Speaking invitations at exclusive industry events",
   "Board positions with companies that matter",
-  "Deal flow from peers who respect your insights",
+  // "Deal flow from peers who respect your insights",
 ];
 
 const container = {
@@ -41,17 +41,20 @@ export default function Results() {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-14"
         >
-          <span className="text-orange-500 font-medium text-xs md:text-sm uppercase tracking-[0.2em]">Results</span>
+          <span className="text-orange-500 font-medium text-xs md:text-sm uppercase tracking-[0.2em]">
+            Results
+          </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mt-3">
             What happens when your expertise finally gets
             <span className="text-orange-500"> the platform it deserves</span>
           </h2>
           <p className=" text-base md:text-lg mt-4 max-w-3xl mx-auto">
-            Instead of staying invisible while less qualified voices dominate your industry:
+            Instead of staying invisible while less qualified voices dominate
+            your industry:
           </p>
         </motion.div>
 
-         {/* Results list */}
+        {/* Results list */}
         <motion.ul
           variants={container}
           initial="hidden"
@@ -72,7 +75,9 @@ export default function Results() {
                 <div className="absolute inset-0 rounded-full bg-orange-500/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </span>
 
-              <p className="text-white/90 text-base md:text-lg leading-relaxed relative z-10">{text}</p>
+              <p className="text-white/90 text-base md:text-lg leading-relaxed relative z-10">
+                {text}
+              </p>
 
               <span
                 className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -91,7 +96,8 @@ export default function Results() {
         {/* Closing line + CTA */}
         <div className="mt-10 md:mt-14 flex flex-col items-center gap-6">
           <p className=" text-base md:text-lg text-center max-w-2xl">
-            <span className="text-white">Strategic visibility</span> that enhances reputation, not ego.
+            <span className="text-white">Strategic visibility</span> that
+            enhances reputation, not ego.
           </p>
           <a
             href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"

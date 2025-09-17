@@ -1,41 +1,45 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { CheckCircle, Sparkles, TrendingUp, Users, Zap } from "lucide-react"
+import { motion } from "framer-motion";
+import { CheckCircle, Sparkles, TrendingUp, Users, Zap } from "lucide-react";
 
 const personas = [
   {
     title: "Independent financial advisor ",
-    subtitle: "Managing $10-30M AUM who serves wealthy clients but struggles to attract new high-net-worth families",
+    subtitle:
+      "Managing $10-30M AUM who serves wealthy clients but struggles to attract new high-net-worth families",
     icon: TrendingUp,
     gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Investment consultant",
-    subtitle: "At a boutique firm who has a solid track record but gets outshined by advisors at bigger firms online",
+    subtitle:
+      "At a boutique firm who has a solid track record but gets outshined by advisors at bigger firms online",
     icon: Zap,
     gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Forbes-featured entrepreneur ",
-    subtitle: "With a successful exit who has no online presence that matches your offline achievements",
+    subtitle:
+      "With a successful exit who has no online presence that matches your offline achievements",
     icon: Users,
     gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Private banking professional",
-    subtitle: "Who manages significant portfolios but needs personal authority to attract ultra-wealthy prospects",
+    subtitle:
+      "Who manages significant portfolios but needs personal authority to attract ultra-wealthy prospects",
     icon: Sparkles,
     gradient: "from-orange-500 to-orange-700",
   },
   {
     title: "Investment fund manager ",
-    subtitle: "Running smaller funds who needs visibility to attract institutional investors and family offices",
+    subtitle:
+      "Running smaller funds who needs visibility to attract institutional investors and family offices",
     icon: TrendingUp,
     gradient: "from-orange-500 to-orange-700",
   },
-]
-
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -46,7 +50,7 @@ const containerVariants = {
       delayChildren: 0.3,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: {
@@ -63,7 +67,7 @@ const itemVariants = {
       ease: [0.25, 0.46, 0.45, 0.94],
     },
   },
-}
+};
 
 const cardHoverVariants = {
   hover: {
@@ -74,7 +78,7 @@ const cardHoverVariants = {
       ease: "easeOut",
     },
   },
-}
+};
 
 const WhoIsFor = () => {
   return (
@@ -145,7 +149,7 @@ const WhoIsFor = () => {
         ))}
       </div>
 
-      <div className="w-[85%] mx-auto max-w-7xl relative z-20">
+      <div className="w-[65%] mx-auto max-w-7xl relative z-20">
         {/* Enhanced Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -162,7 +166,9 @@ const WhoIsFor = () => {
             className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full mb-6"
           >
             <CheckCircle className="w-4 h-4 text-orange-400" />
-            <span className="text-orange-400 font-medium text-sm uppercase tracking-widest">Who this is for</span>
+            <span className="text-orange-400 font-medium text-sm uppercase tracking-widest">
+              Who this is for
+            </span>
           </motion.div>
 
           <motion.h2
@@ -172,7 +178,8 @@ const WhoIsFor = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight"
           >
-            This is the spot   <span className="text-orange-500">if you are a...</span>
+            This is the spot{" "}
+            <span className="text-orange-500">if you are a...</span>
           </motion.h2>
 
           <motion.div
@@ -190,12 +197,17 @@ const WhoIsFor = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16"
+          className="grid grid-cols-1 gap-8 mb-16" // 🔥 changed here
         >
           {personas.map((item, i) => {
-            const IconComponent = item.icon
+            const IconComponent = item.icon;
             return (
-              <motion.div key={i} variants={itemVariants} whileHover="hover" className="group relative">
+              <motion.div
+                key={i}
+                variants={itemVariants}
+                whileHover="hover"
+                className="group relative"
+              >
                 <motion.div
                   variants={cardHoverVariants}
                   className="relative p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:border-orange-400/30 transition-all duration-500 overflow-hidden"
@@ -236,7 +248,7 @@ const WhoIsFor = () => {
                   />
                 </motion.div>
               </motion.div>
-            )
+            );
           })}
         </motion.div>
 
@@ -249,15 +261,12 @@ const WhoIsFor = () => {
           className="flex justify-center"
         >
           <motion.a
-            onClick={() => {
-              const element = document.getElementById("WhyItWorks")
-              if (element) {
-                element.scrollIntoView({ behavior: "smooth" })
-              }
-            }}
+            href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
+            target="_blank"
+            rel="noopener noreferrer"
             draggable="false"
-            onDragStart={(e) => e.preventDefault()}
-            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={e => e.preventDefault()}
+            onContextMenu={e => e.preventDefault()}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
@@ -267,7 +276,7 @@ const WhoIsFor = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default WhoIsFor
+export default WhoIsFor;

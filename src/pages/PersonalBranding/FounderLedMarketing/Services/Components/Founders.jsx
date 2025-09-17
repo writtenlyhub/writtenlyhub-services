@@ -17,7 +17,10 @@ const Founders = () => {
             Introducing the person behind it
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            Meet Astha Verma - <span className="text-orange-500 ">The founder-led marketing specialist who gets founders</span>
+            Meet Astha Verma -{" "}
+            <span className="text-orange-500 ">
+              The Founder-led Marketing Specialist who gets founders
+            </span>
           </h2>
         </motion.div>
 
@@ -53,35 +56,56 @@ const Founders = () => {
               </h3>
 
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've worked with brilliant founders who've built industry-shifting products, yet their LinkedIn profiles read like everyone else's corporate template.
+                I've worked with brilliant founders who've built
+                industry-shifting products, yet their LinkedIn profiles read
+                like everyone else's corporate template.
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've helped SaaS CEOs whose solutions deliver 10x ROI to clients, but their content gets lost in the noise while inferior competitors book all the qualified demos.
+                I've helped SaaS CEOs whose solutions deliver 10x ROI to
+                clients, but their content gets lost in the noise while inferior
+                competitors book all the qualified demos.
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed italic mb-2">
-                Here's what I learned: Your product isn't the problem. How you position yourself as a founder is.
+                Here's what I learned: Your product isn't the problem. How you
+                position yourself as a founder is.
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I spent 4 years figuring out why some founders become industry voices while others stay invisible. The difference isn't better features - it's better founder positioning.
+                I spent 4 years figuring out why some founders become industry
+                voices while others stay invisible. The difference isn't better
+                features - it's better founder positioning.
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed mb-2">
-                I've helped 20+ tech founders build LinkedIn presence that generates predictable pipeline. My clients don't just get more followers - they get more qualified demos, faster deal cycles, and premium pricing power.
+                I've helped 20+ tech founders build LinkedIn presence that
+                generates predictable pipeline. My clients don't just get more
+                followers - they get more qualified demos, faster deal cycles,
+                and premium pricing power.
               </p>
               <p className="text-base md:text-lg font-medium leading-relaxed italic mb-2">
-                The founders I work with don't want to become LinkedIn influencers. They want to become the obvious choice when prospects are ready to buy.
+                The founders I work with don't want to become LinkedIn
+                influencers. They want to become the obvious choice when
+                prospects are ready to buy.
               </p>
             </div>
 
             <div className="mt-auto">
               <p className="text-base md:text-lg font-semibold text-orange-500 mb-4">
-                Your expertise got you this far. Let me help the right people discover it.
+                Your expertise got you this far. Let me help the right people
+                discover it.
               </p>
-              
+
               <div className="flex items-center gap-4 mb-6">
-                <a href="https://in.linkedin.com/in/astha-verma-av" target="_blank" className="text-white hover:text-orange-500 transition-colors">
+                <a
+                  href="https://in.linkedin.com/in/astha-verma-av"
+                  target="_blank"
+                  className="text-white hover:text-orange-500 transition-colors"
+                >
                   <FaLinkedin size={28} />
                 </a>
-                <a href="https://www.instagram.com/wholelottaastha/" target="_blank" className="text-white hover:text-orange-500 transition-colors">
+                <a
+                  href="https://www.instagram.com/wholelottaastha/"
+                  target="_blank"
+                  className="text-white hover:text-orange-500 transition-colors"
+                >
                   <FaInstagram size={28} />
                 </a>
               </div>
@@ -91,7 +115,7 @@ const Founders = () => {
       </div>
       {/* CTA */}
       <div className="w-[80%] mx-auto mt-8 text-center">
-        <a 
+        <a
           href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
           target="_blank"
           rel="noopener noreferrer"
