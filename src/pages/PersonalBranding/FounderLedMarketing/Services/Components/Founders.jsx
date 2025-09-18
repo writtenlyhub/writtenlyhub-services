@@ -19,7 +19,7 @@ const Founders = () => {
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
             Meet Astha Verma -{" "}
             <span className="text-orange-500 ">
-              The Founder-led Marketing Specialist who gets founders
+              The founder-led marketing specialist who gets founders
             </span>
           </h2>
         </motion.div>
