@@ -104,7 +104,7 @@ const CaseStudy2 = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://calendly.com/asthaverma/build-your-personal-brand-with-me",
+                    "https://www.writtenlyhub.com/case-studies/",
                     "_blank"
                   )
                 }

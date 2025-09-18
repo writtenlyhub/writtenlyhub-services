@@ -325,7 +325,7 @@ const ValueProposition = () => {
             onDragStart={e => e.preventDefault()}
             onContextMenu={e => e.preventDefault()}
           >
-            Booko your upgrade
+            Book your upgrade
           </button>
         </div>
       </div>
