@@ -16,8 +16,8 @@ const RotatingBenefits = () => {
             What sets us apart
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4 leading-tight">
-            <span className="block md:inline">Why our content engine is the </span>{' '}
-            <span className="text-orange-500 block">cure you need </span>
+            <span className="block md:inline">Why our content engine is </span>{" "}
+            <span className="text-orange-500 block">the cure you need </span>
           </h2>
         </motion.div>
 
@@ -25,18 +25,18 @@ const RotatingBenefits = () => {
           {/* Shadow container with padding to allow shadow to be visible */}
           <div className="p-4">
             <div className="relative rounded-2xl shadow-xl shadow-black/30">
-              <img 
-                src="https://i.ibb.co/3Y8wgb0T/2-3-day-delivery-not-weeks-2.png" 
-                alt="2-3 day delivery, not weeks" 
+              <img
+                src="https://i.ibb.co/3Y8wgb0T/2-3-day-delivery-not-weeks-2.png"
+                alt="2-3 day delivery, not weeks"
                 className="w-full h-auto rounded-2xl relative z-10"
                 draggable="false"
-                onContextMenu={(e) => e.preventDefault()}
+                onContextMenu={e => e.preventDefault()}
               />
             </div>
           </div>
         </div>
       </div>
-       {/* Centered Button */}
+      {/* Centered Button */}
       <div className="w-full text-center pt-4 pb-12">
         <motion.a
           href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
@@ -44,7 +44,7 @@ const RotatingBenefits = () => {
           rel="noopener noreferrer"
           className="inline-block mt-8 px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
         >
-           See the difference
+          See the difference
         </motion.a>
       </div>
     </section>

@@ -15,7 +15,8 @@ const MeasurableOutcomes = () => {
           Measurable outcomes
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          <span className="text-orange-500">The numbers you wish you saw sooner</span>
+          The numbers
+          <span className="text-orange-500"> you wish you saw sooner</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
           While your content calendar sits half-empty, you're losing:

@@ -6,15 +6,16 @@ const Pricing = () => {
       title: "Essential Content Package",
       price: "$X,XXX",
       frequency: "per month",
-      description: "Ideal for growing nonprofits needing consistent content support",
+      description:
+        "Ideal for growing nonprofits needing consistent content support",
       features: [
         "X blog posts/month",
         "X donor emails/month",
         "X social media posts/month",
         "X-day turnaround",
-        "Basic revisions included"
+        "Basic revisions included",
       ],
-      highlighted: false
+      highlighted: false,
     },
     {
       title: "Complete Content Solution",
@@ -26,10 +27,10 @@ const Pricing = () => {
         "Priority turnaround",
         "Dedicated content strategist",
         "Advanced analytics",
-        "Unlimited revisions"
+        "Unlimited revisions",
       ],
-      highlighted: true
-    }
+      highlighted: true,
+    },
   ];
 
   return (
@@ -40,10 +41,12 @@ const Pricing = () => {
           Pricing
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-       Mission-friendly <span className="text-orange-500">pricing for your content team</span>
+          Mission-friendly pricing{" "}
+          <span className="text-orange-500">for your content team</span>
         </h2>
         <p className="text-gray-300 max-w-2xl mx-auto text-xl">
-          Simple, transparent pricing designed for nonprofits. Pay for what you need and scale as you grow.
+          Simple, transparent pricing designed for nonprofits. Pay for what you
+          need and scale as you grow.
         </p>
       </div>
 
@@ -57,7 +60,9 @@ const Pricing = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
             className={`bg-white/5 border rounded-2xl p-8 text-white shadow-md hover:shadow-lg transition-all duration-500 ease-in-out group flex flex-col h-full ${
-              pkg.highlighted ? "border-orange-500/50 relative" : "border-white/10"
+              pkg.highlighted
+                ? "border-orange-500/50 relative"
+                : "border-white/10"
             }`}
           >
             {pkg.highlighted && (
@@ -65,21 +70,20 @@ const Pricing = () => {
                 MOST POPULAR
               </div>
             )}
-            
-            <div className="flex-grow"> {/* This wrapper ensures content pushes button down */}
+
+            <div className="flex-grow">
+              {" "}
+              {/* This wrapper ensures content pushes button down */}
               <h3 className="text-2xl md:text-3xl font-semibold mb-2 group-hover:text-orange-500 transition-colors duration-300">
                 {pkg.title}
               </h3>
-              
               <div className="flex items-end mb-6">
                 <span className="text-4xl md:text-5xl font-bold text-orange-500 mr-2">
                   {pkg.price}
                 </span>
                 <span className="text-white/70 text-lg">{pkg.frequency}</span>
               </div>
-              
               <p className="text-white/80 mb-6 text-lg">{pkg.description}</p>
-              
               <ul className="space-y-3 mb-8">
                 {pkg.features.map((feature, i) => (
                   <li
@@ -92,7 +96,7 @@ const Pricing = () => {
                 ))}
               </ul>
             </div>
-            
+
             <a
               href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
               target="_blank"
@@ -105,7 +109,6 @@ const Pricing = () => {
             >
               Get started
             </a>
-
           </motion.div>
         ))}
       </div>

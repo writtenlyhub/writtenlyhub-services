@@ -30,7 +30,7 @@ const altCards = [
     points: [
       "Subscription model + limits",
       "Doesn’t know fintech from fidget spinners",
-      "\"Unlimited,\" but only if you want garbage",
+      '"Unlimited," but only if you want garbage',
       "Instant… and instantly unusable",
       "Limited formats, robotic tone",
       "DIY, with prompts and prayers",
@@ -76,10 +76,16 @@ const OldNewWay = () => {
       const containerRect = container.getBoundingClientRect();
       const scrollProgress = Math.max(
         0,
-        Math.min(1, -containerRect.top / (containerRect.height - window.innerHeight))
+        Math.min(
+          1,
+          -containerRect.top / (containerRect.height - window.innerHeight)
+        )
       );
 
-      if (containerRect.top <= 0 && containerRect.bottom >= window.innerHeight) {
+      if (
+        containerRect.top <= 0 &&
+        containerRect.bottom >= window.innerHeight
+      ) {
         sticky.style.position = "fixed";
         sticky.style.top = "0";
         sticky.style.left = "0";
@@ -101,7 +107,10 @@ const OldNewWay = () => {
 
       cardsRef.current.forEach((card, index) => {
         if (!card) return;
-        const cardProgress = Math.max(0, Math.min(1, scrollProgress * altCards.length - index));
+        const cardProgress = Math.max(
+          0,
+          Math.min(1, scrollProgress * altCards.length - index)
+        );
         const isActive = cardProgress > 0;
 
         if (isActive) {
@@ -168,7 +177,7 @@ const OldNewWay = () => {
     };
   }, []);
 
-  const addToRefs = (el) => {
+  const addToRefs = el => {
     if (el && !cardsRef.current.includes(el)) {
       cardsRef.current.push(el);
     }
@@ -185,14 +194,18 @@ const OldNewWay = () => {
           Service comparison
         </span>
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          Why smart FinTech brands bet on our system
+          Why smart FinTech brands
+          <span className="text-orange-500 "> bet on our system</span>
         </h2>
         <p className="text-gray-300 max-w-3xl mx-auto text-lg sm:text-xl">
           Feature-by-feature comparison so you can pick the winner.
         </p>
       </div>
 
-      <div ref={stickyRef} className="flex items-start justify-center z-50 mt-12 sm:mt-34">
+      <div
+        ref={stickyRef}
+        className="flex items-start justify-center z-50 mt-12 sm:mt-34"
+      >
         <div className="w-[90%] sm:w-[80%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-start justify-center">
           <div
             className="left-card bg-orange-500 p-6 sm:p-7 rounded-2xl shadow-2xl border-4 border-orange-500 w-full sm:min-w-[320px] sm:max-w-xs flex-shrink-0 lg:ml-8"
@@ -210,7 +223,9 @@ const OldNewWay = () => {
                 <div
                   key={idx}
                   className={`text-sm sm:text-base rounded-md px-3 py-2 ${
-                    point.highlight ? "bg-white text-orange-500 font-bold" : "bg-white/10 text-white"
+                    point.highlight
+                      ? "bg-white text-orange-500 font-bold"
+                      : "bg-white/10 text-white"
                   } flex items-start gap-2`}
                 >
                   <Check className="w-4 h-4 mt-1 flex-shrink-0" />

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import fi from "../assets/fi.png";
 
 const CaseStudyFiMoney = () => {
   return (
@@ -19,36 +18,40 @@ const CaseStudyFiMoney = () => {
                 Case studies
               </span>
 
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-white mb-4">
-                How <span className="text-orange-500">Fi Money became the Gen Z neobank</span> through content that speaks their language
+              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-white">
+                How{" "}
+                <span className="text-orange-500">
+                  Fi Money became the Gen Z neobank
+                </span>{" "}
+                through content that speaks their language
               </h3>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="bg-white/3 p-4 rounded-lg border border-white/8">
-                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">The challenge</p>
-                  <p className="text-white text-sm">Digital-first banking for Gen Z needed content that was sharp, relevant, and financially accurate.</p>
+              {/* Challenge + Solution stacked */}
+              <div className="flex flex-col gap-4">
+                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
+                    The challenge
+                  </p>
+                  <p className="text-white text-md">
+                    Digital-first banking for Gen Z needed content that was
+                    sharp, relevant, and financially accurate.
+                  </p>
                 </div>
 
-                <div className="bg-white/3 p-4 rounded-lg border border-white/8">
-                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">Our solution</p>
-                  <p className="text-white text-sm">Created finance explainers that Gen Z actually wanted to read — no boring banking jargon.</p>
+                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
+                    Our solution
+                  </p>
+                  <p className="text-white text-md">
+                    Created finance explainers that Gen Z actually wanted to
+                    read — no boring banking jargon.
+                  </p>
                 </div>
-              </div>
-
-              {/* Results */}
-              <div>
-                <p className="text-md text-white">Results in 6 months:</p>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-4">
-                
-                <StatItem label="Organic traffic growth" value="30.21%" />
-                <StatItem label="Gen Z engagement improvement" value="62%" />
-                <StatItem label="Expanded content reach" value="41%" />
               </div>
 
               <p className="text-white text-lg md:text-xl max-w-2xl">
-                Content that turned complex financial topics into conversations young Indians actually care about.
+                Content that turned complex financial topics into conversations
+                young Indians actually care about.
               </p>
 
               <a
@@ -56,21 +59,35 @@ const CaseStudyFiMoney = () => {
                 target="_blank"
                 className="inline-block mt-4 px-64 py-3 bg-orange-500 cursor-pointer hover:bg-white text-white hover:text-orange-500 text-lg font-semibold rounded-full transition-colors duration-700"
               >
-                Get these wins
+                Scale like this
               </a>
             </div>
 
-            {/* Right: Image */}
-            <div className="hidden sm:block md:w-[40%] lg:w-[35%] bg-gradient-to-br from-orange-500/10 to-blue-500/10">
-              <img
-                src={fi}
-                alt="Fi Money case study visual"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                onDragStart={(e) => e.preventDefault()}
-                onContextMenu={(e) => e.preventDefault()}
-                draggable="false"
-              />
+            {/* Right: Modern Results Panel */}
+            <div className="md:w-[40%] lg:w-[35%] flex flex-col justify-center p-8 bg-gradient-to-br from-orange-500/20 via-blue-500/10 to-orange-500/5">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="bg-[#031536]/70 backdrop-blur-md rounded-2xl border border-white/10 p-8 shadow-lg flex flex-col h-full"
+              >
+                <p className="text-lg font-semibold text-white mb-4">
+                  Results in 6 months
+                </p>
+                <div className="h-px bg-white/10 mb-6" />
+
+                <div className="flex flex-col gap-16 justify-center flex-1">
+                  <StatItemModern
+                    label="Organic traffic growth"
+                    value="30.21%"
+                  />
+                  <StatItemModern
+                    label="Gen Z engagement improvement"
+                    value="62%"
+                  />
+                  <StatItemModern label="Expanded content reach" value="41%" />
+                </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -79,18 +96,19 @@ const CaseStudyFiMoney = () => {
   );
 };
 
-const StatItem = ({ label, value }) => (
-  <div className="flex items-start bg-white/3 p-3 rounded-lg border border-white/8">
-    <div className="mr-3 p-2 bg-orange-500/10 rounded-lg">
-      <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    </div>
-    <div>
-      <p className="text-gray-300 text-xs uppercase tracking-wider mb-1">{label}</p>
-      <p className="text-white font-bold text-lg">{value}</p>
-    </div>
-  </div>
+const StatItemModern = ({ label, value }) => (
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    transition={{ type: "spring", stiffness: 200, damping: 15 }}
+    className="flex flex-col"
+  >
+    <span className="text-3xl md:text-4xl font-extrabold text-orange-400">
+      {value}
+    </span>
+    <span className="text-sm text-white/70 uppercase tracking-wide mt-1">
+      {label}
+    </span>
+  </motion.div>
 );
 
 export default CaseStudyFiMoney;

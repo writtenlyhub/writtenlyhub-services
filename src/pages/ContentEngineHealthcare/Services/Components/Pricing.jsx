@@ -9,7 +9,7 @@ const Pricing = () => {
     "SaaS-specialized writers only",
     "AI-enhanced quality control",
     "Unlimited revisions",
-    "One dedicated point of contact"
+    "One dedicated point of contact",
   ];
 
   return (
@@ -27,7 +27,10 @@ const Pricing = () => {
             Pricing
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2 md:mt-3 mb-3 md:mb-4">
-            Ditch the <span className="text-orange-500">per-word/piece pricing torture</span>
+            Ditch{" "}
+            <span className="text-orange-500">
+              the per-word/piece pricing torture
+            </span>
           </h2>
           <p className=" font-semibold text-lg md:text-xl">
             Starting at $3,000/month
@@ -77,14 +80,21 @@ const Pricing = () => {
           >
             <div className="mb-6">
               <span className="text-white/70">Starting at</span>
-              <p className="text-5xl font-bold text-orange-500 mt-2">$3,000<span className="text-white/70 text-xl">/month</span></p>
+              <p className="text-5xl font-bold text-orange-500 mt-2">
+                $3,000<span className="text-white/70 text-xl">/month</span>
+              </p>
             </div>
 
             <motion.a
-              onClick={() => window.open("https://calendly.com/asthaverma/build-your-personal-brand-with-me", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/asthaverma/build-your-personal-brand-with-me",
+                  "_blank"
+                )
+              }
               draggable="false"
-              onDragStart={(e) => e.preventDefault()}
-              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={e => e.preventDefault()}
+              onContextMenu={e => e.preventDefault()}
               className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
             >
               Let's start now!

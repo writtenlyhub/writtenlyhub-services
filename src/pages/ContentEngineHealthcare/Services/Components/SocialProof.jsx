@@ -4,25 +4,69 @@ import { useInView } from "react-intersection-observer";
 
 // Sample logos and avatars
 const companies = [
-  { id: 1, name: "upGrad", logo: "https://ik.imagekit.io/upgrad1/abroad-images/logo/upGrad_logo_web.svg?tr=w-118,q-70" },
-  { id: 2, name: "Ask-Apollo-Health", logo: "https://images.apollo247.in/images/icons/apollo247.svg" },
-  { id: 3, name: "Shriram-Finance-Logo", logo: "https://cdn.shriramfinance.in/sfl-fe/assets/images/sw-logo.svg" },
-  { id: 4, name: "Zeffy", logo: "https://cdn.prod.website-files.com/60af7f6d21134db12548f5b9/62a23ee189b58ad0dd096db0_Zeffy-Logo-White.svg" },
-  { id: 5, name: "Kreatr", logo: "https://www.thekreatr.com/assets/images/kreatrLogo.svg" },
-  { id: 6, name: "Growth Jockey", logo: "https://intellsys-optimizer.b-cdn.net/growthjockey/logo/gj-white-text-logo.svg" },
-  { id: 7, name: "CoinDCX", logo: "https://coindcx.com/wp-content/uploads/2024/02/coindcx-logo.svg" },
-  { id: 8, name: "FiMoney", logo: "https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo-footer.svg" },
-  { id: 9, name: "Basofa", logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png" },
-  { id: 10, name: "Look Forward Foundation", logo: "https://lookforward.in/wp-content/uploads/2023/07/LFF-Logo-1-Recovered-Recovered.png" },
+  {
+    id: 1,
+    name: "upGrad",
+    logo: "https://ik.imagekit.io/upgrad1/abroad-images/logo/upGrad_logo_web.svg?tr=w-118,q-70",
+  },
+  {
+    id: 2,
+    name: "Ask-Apollo-Health",
+    logo: "https://images.apollo247.in/images/icons/apollo247.svg",
+  },
+  {
+    id: 3,
+    name: "Shriram-Finance-Logo",
+    logo: "https://cdn.shriramfinance.in/sfl-fe/assets/images/sw-logo.svg",
+  },
+  {
+    id: 4,
+    name: "Zeffy",
+    logo: "https://cdn.prod.website-files.com/60af7f6d21134db12548f5b9/62a23ee189b58ad0dd096db0_Zeffy-Logo-White.svg",
+  },
+  {
+    id: 5,
+    name: "Kreatr",
+    logo: "https://www.thekreatr.com/assets/images/kreatrLogo.svg",
+  },
+  {
+    id: 6,
+    name: "Growth Jockey",
+    logo: "https://intellsys-optimizer.b-cdn.net/growthjockey/logo/gj-white-text-logo.svg",
+  },
+  {
+    id: 7,
+    name: "CoinDCX",
+    logo: "https://coindcx.com/wp-content/uploads/2024/02/coindcx-logo.svg",
+  },
+  {
+    id: 8,
+    name: "FiMoney",
+    logo: "https://dza2kd7rioahk.cloudfront.net/assets/svgs/logo-footer.svg",
+  },
+  {
+    id: 9,
+    name: "Basofa",
+    logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png",
+  },
+  {
+    id: 10,
+    name: "Look Forward Foundation",
+    logo: "https://lookforward.in/wp-content/uploads/2023/07/LFF-Logo-1-Recovered-Recovered.png",
+  },
 ];
 
 const stats = [
-  { id: 1, name: 'healthcare brands partnered with', value: 15, unit: '+' },
-  { id: 2, name: 'healthcare professionals and patients reached', value: 340, unit: 'K+' },
-  { id: 3, name: 'pages ranking #1 for medical terms', value: 285, unit: '+' },
-  { id: 4, name: 'increase in qualified conversions', value: 86, unit: '%' },
+  { id: 1, name: "healthcare brands partnered with", value: 15, unit: "+" },
+  {
+    id: 2,
+    name: "healthcare professionals and patients reached",
+    value: 340,
+    unit: "K+",
+  },
+  { id: 3, name: "pages ranking #1 for medical terms", value: 285, unit: "+" },
+  { id: 4, name: "increase in qualified conversions", value: 86, unit: "%" },
 ];
-
 
 // Animation variants
 const container = {
@@ -59,22 +103,25 @@ const Counter = ({ value, unit }) => {
     }
   }, [inView, value]);
 
-const formatValue = () => {
-  if (unit === 'M+') {
-    return `${count}M+`;
-  } else if (unit === 'K+') {
-    return `${count}K+`;
-  } else if (unit === '%') {
-    return `${count}%`;
-  } else if (unit === '+') {
-    return `${count}+`;
-  } else {
-    return count.toLocaleString();
-  }
-};
+  const formatValue = () => {
+    if (unit === "M+") {
+      return `${count}M+`;
+    } else if (unit === "K+") {
+      return `${count}K+`;
+    } else if (unit === "%") {
+      return `${count}%`;
+    } else if (unit === "+") {
+      return `${count}+`;
+    } else {
+      return count.toLocaleString();
+    }
+  };
 
-  
-  return <span ref={ref} className="text-orange-500 font-bold text-4xl md:text-5xl">{formatValue()}</span>;
+  return (
+    <span ref={ref} className="text-orange-500 font-bold text-4xl md:text-5xl">
+      {formatValue()}
+    </span>
+  );
 };
 
 const InfiniteScrollLogos = () => {
@@ -131,22 +178,25 @@ const SocialProof = () => {
   return (
     <section className="bg-[#022150] text-white py-16">
       {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mt-8 md:mt-16"
-        >
-          <div className="text-center">
-            <span className="text-orange-500 font-medium text-sm md:text-md uppercase tracking-widest">
-              Client portfolio
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="mt-8 md:mt-16"
+      >
+        {/* <div className="text-center">
+          <span className="text-orange-500 font-medium text-sm md:text-md uppercase tracking-widest">
+            Client portfolio
+          </span>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
+            The teams that were{" "}
+            <span className="text-orange-500">
+              blessed with our content retainer{" "}
             </span>
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
-             The teams that were <span className="text-orange-500">blessed with our content retainer </span>
-            </h2>
-          </div>
-        </motion.div>
+          </h2>
+        </div> */}
+      </motion.div>
       <motion.div
         variants={container}
         initial="hidden"
@@ -158,18 +208,18 @@ const SocialProof = () => {
           <InfiniteScrollLogos />
         </motion.div>
 
-<motion.div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="mt-10 md:mt-20"
         >
-          <div className="text-center">
+          {/* <div className="text-center">
             <span className="text-orange-500 font-medium text-sm md:text-md uppercase tracking-widest">
               Why healthcare leaders choose us
             </span>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           variants={container}
@@ -179,12 +229,16 @@ const SocialProof = () => {
             <motion.div
               key={stat.id}
               variants={fadeInUp}
-              className={`text-center px-2 py-4 ${index % 4 !== 3 ? 'sm:border-r border-white/10' : ''}`}
+              className={`text-center px-2 py-4 ${
+                index % 4 !== 3 ? "sm:border-r border-white/10" : ""
+              }`}
             >
               <p className="text-2xl md:text-3xl font-bold text-white mb-1">
                 <Counter value={stat.value} unit={stat.unit} />
               </p>
-              <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">{stat.name}</p>
+              <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">
+                {stat.name}
+              </p>
             </motion.div>
           ))}
         </motion.div>
@@ -197,7 +251,7 @@ const SocialProof = () => {
           rel="noopener noreferrer"
           className="inline-block px-16 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-lg hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
         >
-            Get unlimited
+          Get unlimited
         </motion.a>
       </div>
     </section>

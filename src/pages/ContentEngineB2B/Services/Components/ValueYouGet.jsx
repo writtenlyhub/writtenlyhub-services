@@ -20,13 +20,13 @@ const ValueSection = () => {
   ];
 
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
+    setCurrentImageIndex(prevIndex =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
+    setCurrentImageIndex(prevIndex =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
@@ -97,7 +97,7 @@ const ValueSection = () => {
         </motion.div>
 
         {/* Text that changes with image */}
-        <motion.p
+        {/* <motion.p
           key={currentImageIndex}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ const ValueSection = () => {
           className="text-white text-lg md:text-xl max-w-3xl mx-auto mb-8"
         >
           {texts[currentImageIndex]}
-        </motion.p>
+        </motion.p> */}
 
         {/* Image Indicator Dots */}
         <div className="flex justify-center gap-2 mb-8">
@@ -114,7 +114,9 @@ const ValueSection = () => {
               key={index}
               onClick={() => setCurrentImageIndex(index)}
               className={`w-3 h-3 rounded-full transition-all ${
-                currentImageIndex === index ? "bg-orange-500 w-6" : "bg-white/30"
+                currentImageIndex === index
+                  ? "bg-orange-500 w-6"
+                  : "bg-white/30"
               }`}
               aria-label={`Go to image ${index + 1}`}
             />
@@ -138,8 +140,8 @@ const ValueSection = () => {
               )
             }
             draggable="false"
-            onDragStart={(e) => e.preventDefault()}
-            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={e => e.preventDefault()}
+            onContextMenu={e => e.preventDefault()}
           >
             Get these wins
           </button>

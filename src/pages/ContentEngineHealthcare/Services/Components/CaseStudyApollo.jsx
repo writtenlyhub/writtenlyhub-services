@@ -19,36 +19,35 @@ const CaseStudyApollo = () => {
                 Case studies
               </span>
 
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-white mb-4">
-                How <span className="text-orange-500">Apollo 24/7 scaled to 3,000+ locations</span> with consistent medical content
+              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-white">
+                How{" "}
+                <span className="text-orange-500">
+                  Apollo 24/7 scaled to 3,000+ locations
+                </span>{" "}
+                with consistent medical content
               </h3>
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="bg-white/3 p-4 rounded-lg border border-white/8">
-                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">The challenge</p>
-                  <p className="text-white text-sm">
-                    Massive healthcare network needed standardized patient education across thousands of locations and medical specialties.
+              {/* Challenge + Solution stacked */}
+              <div className="flex flex-col gap-4">
+                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
+                    The challenge
+                  </p>
+                  <p className="text-white text-md">
+                    Massive healthcare network needed standardized patient
+                    education across thousands of locations and specialties.
                   </p>
                 </div>
 
-                <div className="bg-white/3 p-4 rounded-lg border border-white/8">
-                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">Our solution</p>
-                  <p className="text-white text-sm">
-                    Systematic content creation for multiple medical categories and local market optimization.
+                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+                  <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
+                    Our solution
+                  </p>
+                  <p className="text-white text-md">
+                    Systematic content creation for multiple medical categories
+                    with local market optimization.
                   </p>
                 </div>
-              </div>
-
-              {/* Results */}
-              {/* <div>
-                <p className="text-md text-white">Results:</p>
-              </div> */}
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 mb-4">
-                <StatItem label="Google My Business profiles driving local patient traffic" value="3,000+" />
-                <StatItem label="YouTube video descriptions driving health education engagement" value="350+" />
-                <StatItem label="Medical category pages ranking for high-intent searches" value="240+" />
-                <StatItem label="Consistent content production without internal bandwidth strain" value="✔" />
               </div>
 
               <p className="text-white text-lg md:text-xl max-w-2xl">
@@ -64,17 +63,36 @@ const CaseStudyApollo = () => {
               </a>
             </div>
 
-            {/* Right: Image */}
-            <div className="hidden sm:block md:w-[40%] lg:w-[35%] bg-gradient-to-br from-orange-500/10 to-blue-500/10">
-              <img
-                src={apollo}
-                alt="Apollo 24/7 case study visual"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                onDragStart={(e) => e.preventDefault()}
-                onContextMenu={(e) => e.preventDefault()}
-                draggable="false"
-              />
+            {/* Right: Modern Results Panel */}
+            <div className="md:w-[40%] lg:w-[35%] flex flex-col justify-center p-8 bg-gradient-to-br from-orange-500/20 via-blue-500/10 to-orange-500/5">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                className="bg-[#031536]/70 backdrop-blur-md rounded-2xl border border-white/10 p-8 shadow-lg flex flex-col h-full"
+              >
+                <p className="text-lg font-semibold text-white mb-4">Results</p>
+                <div className="h-px bg-white/10 mb-6" />
+
+                <div className="flex flex-col gap-12 justify-center flex-1">
+                  <StatItemModern
+                    label="Google My Business profiles driving local patient traffic"
+                    value="3,000+"
+                  />
+                  <StatItemModern
+                    label="YouTube video descriptions driving health education engagement"
+                    value="350+"
+                  />
+                  <StatItemModern
+                    label="Medical category pages ranking for high-intent searches"
+                    value="240+"
+                  />
+                  <StatItemModern
+                    label="Consistent content production without internal bandwidth strain"
+                    value="✔"
+                  />
+                </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -83,18 +101,19 @@ const CaseStudyApollo = () => {
   );
 };
 
-const StatItem = ({ label, value }) => (
-  <div className="flex items-start bg-white/3 p-3 rounded-lg border border-white/8">
-    <div className="mr-3 p-2 bg-orange-500/10 rounded-lg">
-      <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    </div>
-    <div>
-      <p className="text-gray-300 text-xs uppercase tracking-wider mb-1">{label}</p>
-      <p className="text-white font-bold text-lg">{value}</p>
-    </div>
-  </div>
+const StatItemModern = ({ label, value }) => (
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    transition={{ type: "spring", stiffness: 200, damping: 15 }}
+    className="flex flex-col"
+  >
+    <span className="text-3xl md:text-4xl font-extrabold text-orange-400">
+      {value}
+    </span>
+    <span className="text-sm text-white/70 uppercase tracking-wide mt-1">
+      {label}
+    </span>
+  </motion.div>
 );
 
 export default CaseStudyApollo;

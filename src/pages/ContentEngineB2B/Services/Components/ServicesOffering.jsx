@@ -7,33 +7,33 @@ const ServicesOffering = () => {
       points: [
         "No cap on content requests",
         "All content types included",
-        "Fixed pricing, unlimited output"
-      ]
+        "Fixed pricing, unlimited output",
+      ],
     },
     {
       title: "SaaS-native expertise",
       points: [
         "Writers who understand your buyer journey",
         "Content that drives trials, not just traffic",
-        "Perfect brand voice adoption from day one"
-      ]
+        "Perfect brand voice adoption from day one",
+      ],
     },
     {
       title: "Execution-focused delivery",
       points: [
         "48-72 hour average turnaround",
         "One dedicated point of contact",
-        "Fits your existing workflow"
-      ]
+        "Fits your existing workflow",
+      ],
     },
     {
       title: "Execution-only focus",
       points: [
         "No strategy meetings required",
         "Content that follows your plan",
-        "Full control over feedback and revisions"
-      ]
-    }
+        "Full control over feedback and revisions",
+      ],
+    },
   ];
 
   return (
@@ -44,13 +44,17 @@ const ServicesOffering = () => {
           Service offering
         </span>
         <h2 className="text-3xl md:text-5xl font-bold text-white mt-3 mb-4 leading-tight">
-          Unlimited B2B content that <span className="text-orange-500">scales with your growth targets</span>
+          Unlimited B2B content <br />{" "}
+          <span className="text-orange-500">
+            that scales with your growth targets
+          </span>
         </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto text-xl mb-3">
+        {/* <p className="text-gray-300 max-w-2xl mx-auto text-xl mb-3">
           Send in requirements, get content, repeat.
-        </p>
-        <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-          No per-piece fees, no scope creep, no explaining SaaS fundamentals to writers who think ARR means "pirate noise."
+        </p> */}
+        <p className="text-white max-w-3xl mx-auto text-lg">
+          No per-piece fees, no scope creep, no explaining SaaS fundamentals to
+          writers who think ARR means "pirate noise."
         </p>
       </div>
 

@@ -4,14 +4,14 @@ import HeroVid from "../assets/herovid.mp4";
 import Logo from "../assets/logo.png";
 
 const profileImages = [
-  'https://randomuser.me/api/portraits/women/44.jpg',
-  'https://randomuser.me/api/portraits/men/32.jpg',
-  'https://randomuser.me/api/portraits/women/68.jpg',
-  'https://randomuser.me/api/portraits/men/75.jpg'
+  "https://randomuser.me/api/portraits/women/44.jpg",
+  "https://randomuser.me/api/portraits/men/32.jpg",
+  "https://randomuser.me/api/portraits/women/68.jpg",
+  "https://randomuser.me/api/portraits/men/75.jpg",
 ];
 
 const container = {
-  hidden: {},   
+  hidden: {},
   show: {
     transition: {
       staggerChildren: 0.2,
@@ -29,21 +29,21 @@ const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef(null);
   const videoContainerRef = useRef(null);
-  
+
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-    return () => window.removeEventListener('resize', checkIfMobile);
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
-    enabled: !isMobile
+    enabled: !isMobile,
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
@@ -51,7 +51,7 @@ const Hero = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="font-montserrat bg-[#022150] text-white relative overflow-hidden flex justify-center items-center min-h-screen py-12 md:py-20"
     >
@@ -62,8 +62,8 @@ const Hero = () => {
         className="w-full max-w-7xl mx-auto flex flex-col items-center"
       >
         {/* Logo */}
-        <motion.div 
-          variants={fadeInUp} 
+        <motion.div
+          variants={fadeInUp}
           className="mb-4 w-[80%]"
           style={{ opacity: isMobile ? 1 : opacity }}
         >
@@ -76,7 +76,10 @@ const Hero = () => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-semibold leading-tight sm:leading-tight mb-4 text-left w-[80%]"
           style={{ opacity: isMobile ? 1 : opacity }}
         >
-          Stop explaining blockchain to content writers <span className="text-orange-500">who think DeFi means "definitely fire"</span>
+          Stop explaining blockchain to content{" "}
+          <span className="text-orange-500">
+            who think DeFi means "definitely fire"
+          </span>
         </motion.h1>
 
         {/* Subtext */}
@@ -85,12 +88,14 @@ const Hero = () => {
           className="text-white/90 text-lg sm:text-xl mb-6 text-left w-[80%]"
           style={{ opacity: isMobile ? 1 : opacity }}
         >
-          Get unlimited fintech content from writers who actually understand regulatory compliance, payment flows, and why your API matters to enterprise clients.
+          Get unlimited fintech content from writers who actually understand
+          regulatory compliance, payment flows, and why your API matters to
+          enterprise clients.
         </motion.p>
 
         {/* CTA with social proof */}
-        <motion.div 
-          variants={fadeInUp} 
+        <motion.div
+          variants={fadeInUp}
           className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10 sm:mb-12 w-[80%]"
           style={{ opacity: isMobile ? 1 : opacity }}
         >
@@ -121,9 +126,9 @@ const Hero = () => {
         </motion.div>
 
         {/* Video */}
-        <motion.div 
+        <motion.div
           ref={videoContainerRef}
-          variants={fadeInUp} 
+          variants={fadeInUp}
           className="w-[80%]"
           style={{
             scale: isMobile ? 1 : scale,
@@ -140,7 +145,7 @@ const Hero = () => {
                 controls
                 playsInline
                 className="w-full h-full object-cover"
-                onContextMenu={(e) => e.preventDefault()}
+                onContextMenu={e => e.preventDefault()}
               />
             </div>
           </div>
