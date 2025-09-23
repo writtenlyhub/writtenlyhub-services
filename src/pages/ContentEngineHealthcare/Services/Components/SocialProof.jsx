@@ -221,28 +221,31 @@ const SocialProof = () => {
             </span>
           </div> */}
         </motion.div>
-        <motion.div
-          variants={container}
-          className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.id}
-              variants={fadeInUp}
-              className={`text-center px-2 py-4 ${
-                index % 4 !== 3 ? "sm:border-r border-white/10" : ""
-              }`}
-            >
-              <p className="text-2xl md:text-3xl font-bold text-white mb-1">
-                <Counter value={stat.value} unit={stat.unit} />
-              </p>
-              <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">
-                {stat.name}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
       </motion.div>
+
+      {/* stats container */}
+      <motion.div
+        variants={container}
+        className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8"
+      >
+        {stats.map((stat, index) => (
+          <motion.div
+            key={stat.id}
+            variants={fadeInUp}
+            className={`text-center px-2 py-4 ${
+              index % 4 !== 3 ? "sm:border-r border-white/10" : ""
+            }`}
+          >
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">
+              <Counter value={stat.value} unit={stat.unit} />
+            </p>
+            <p className="text-xs sm:text-xs text-white/60 uppercase tracking-wide">
+              {stat.name}
+            </p>
+          </motion.div>
+        ))}
+      </motion.div>
+
       {/* Centered Button */}
       <div className="w-full text-center pt-4 pb-12 mt-14">
         <motion.a

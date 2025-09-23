@@ -204,7 +204,7 @@ const OldNewWay = () => {
 
       <div
         ref={stickyRef}
-        className="flex items-start justify-center z-50 mt-12 sm:mt-34"
+        className="flex items-start justify-center z-50 mt-12 sm:mt-28"
       >
         <div className="w-[90%] sm:w-[80%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-start justify-center">
           <div
@@ -235,7 +235,7 @@ const OldNewWay = () => {
             </div>
           </div>
 
-          <div className="relative flex-1 w-full sm:max-w-lg lg:max-w-xl min-h-[420px] sm:min-h-[520px]">
+          <div className="relative flex-1 w-full sm:max-w-lg lg:max-w-xl min-h-[420px] sm:min-h-[460px]">
             {altCards.map((card, i) => (
               <div
                 key={card.title}

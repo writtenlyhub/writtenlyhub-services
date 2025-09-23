@@ -33,7 +33,7 @@ const CMOCloser = () => {
             content engines.
           </p>
 
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-5">
             <div className="relative inline-block">
               <a
                 href="https://calendly.com/asthaverma/build-your-personal-brand-with-me"
@@ -66,7 +66,7 @@ const CMOCloser = () => {
               </a>
             </div>
 
-            <p className="text-white text-lg md:text-xl italic">
+            <p className="text-white text-lg md:text-xl italic mt-5">
               P.S. We only have the capacity for{" "}
               <span className="text-orange-500">2 new retainer projects.</span>{" "}
               We’ve warned you!

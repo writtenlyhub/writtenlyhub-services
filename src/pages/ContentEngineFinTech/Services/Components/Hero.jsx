@@ -76,7 +76,7 @@ const Hero = () => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-semibold leading-tight sm:leading-tight mb-4 text-left w-[80%]"
           style={{ opacity: isMobile ? 1 : opacity }}
         >
-          Stop explaining blockchain to content{" "}
+          Stop explaining blockchain to content <br />{" "}
           <span className="text-orange-500">
             who think DeFi means "definitely fire"
           </span>

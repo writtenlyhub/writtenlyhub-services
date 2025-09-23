@@ -23,6 +23,41 @@ const TestimonialSlider = () => {
       role: "",
       logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png",
     },
+    {
+      quote:
+        "Astha, Saksham, and the team felt like in-house partners. They understood our brand, delivered results without the back-and-forth, and gave strategic input that truly mattered.",
+      name: "Megha Satish",
+      role: "Founder, Kreatr",
+      logo: "https://www.thekreatr.com/assets/images/kreatrLogo.svg",
+    },
+    {
+      quote:
+        "Writtenlyhub became our go-to for high-quality long-form content. Their consistency, speed, and strategic edge helped us scale content without sacrificing quality.",
+      name: "Shweta Arora",
+      role: "Sr. Project Manager, upGrad",
+      logo: "https://ik.imagekit.io/upgrad1/abroad-images/logo/upGrad_logo_web.svg?tr=w-118,q-70",
+    },
+    {
+      quote:
+        "From brand positioning to website build, the team nailed it. They made our profile look sharp and delivered a smooth, on-point digital experience end-to-end.",
+      name: "Nidhi Saraogi",
+      role: "IT Project Manager, Basofa",
+      logo: "https://www.basofa.com/wp-content/uploads/2024/01/BSF-Logo-Dimensions-Fit-1.png",
+    },
+    {
+      quote:
+        "Writtenlyhub shaped our website with clarity and purpose. They crafted user-friendly, accurate content that improved both search visibility and experience.",
+      name: "Ankur",
+      role: "Content Lead, Apollo 24/7",
+      logo: "https://images.apollo247.in/images/icons/apollo247.svg",
+    },
+    {
+      quote:
+        "From the start, WrittenlyHub felt like a team I could trust like an extended arm helping us, and not an external agency! The project execution was seamless, marked by authenticity, care, and reliable support.",
+      name: "Camille Duboz",
+      role: "Growth Specialist, Zeffy",
+      logo: "https://support.zeffy.com/hs-fs/hubfs/afe98758-4209-48ca-816b-e1d26fee86fa-1.png?width=156&height=48&name=afe98758-4209-48ca-816b-e1d26fee86fa-1.png",
+    },
   ];
 
   // Duplicate testimonials for infinite scroll effect

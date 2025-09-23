@@ -27,29 +27,29 @@ const CaseStudyFiMoney = () => {
               </h3>
 
               {/* Challenge + Solution stacked */}
-              <div className="flex flex-col gap-4">
-                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+              <div className="flex flex-col gap-3">
+                <div className="bg-white/3 p-3 rounded-lg border border-white/8">
                   <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
                     The challenge
                   </p>
-                  <p className="text-white text-md">
+                  <p className="text-white text-sm">
                     Digital-first banking for Gen Z needed content that was
                     sharp, relevant, and financially accurate.
                   </p>
                 </div>
 
-                <div className="bg-white/3 p-5 rounded-lg border border-white/8">
+                <div className="bg-white/3 p-3 rounded-lg border border-white/8">
                   <p className="text-xs text-white/60 uppercase tracking-wider mb-2">
                     Our solution
                   </p>
-                  <p className="text-white text-md">
+                  <p className="text-white text-sm">
                     Created finance explainers that Gen Z actually wanted to
                     read — no boring banking jargon.
                   </p>
                 </div>
               </div>
 
-              <p className="text-white text-lg md:text-xl max-w-2xl">
+              <p className="text-white text-md md:text-md max-w-2xl">
                 Content that turned complex financial topics into conversations
                 young Indians actually care about.
               </p>
@@ -57,7 +57,7 @@ const CaseStudyFiMoney = () => {
               <a
                 href="https://www.writtenlyhub.com/case-studies/"
                 target="_blank"
-                className="inline-block mt-4 px-64 py-3 bg-orange-500 cursor-pointer hover:bg-white text-white hover:text-orange-500 text-lg font-semibold rounded-full transition-colors duration-700"
+                className="inline-block px-64 py-3 bg-orange-500 cursor-pointer hover:bg-white text-white hover:text-orange-500 text-lg font-semibold rounded-full transition-colors duration-700"
               >
                 Scale like this
               </a>
@@ -76,7 +76,7 @@ const CaseStudyFiMoney = () => {
                 </p>
                 <div className="h-px bg-white/10 mb-6" />
 
-                <div className="flex flex-col gap-16 justify-center flex-1">
+                <div className="flex flex-col gap-16 justify-evenly flex-1">
                   <StatItemModern
                     label="Organic traffic growth"
                     value="30.21%"
@@ -102,10 +102,10 @@ const StatItemModern = ({ label, value }) => (
     transition={{ type: "spring", stiffness: 200, damping: 15 }}
     className="flex flex-col"
   >
-    <span className="text-3xl md:text-4xl font-extrabold text-orange-400">
+    <span className="text-3xl md:text-5xl font-extrabold text-orange-400">
       {value}
     </span>
-    <span className="text-sm text-white/70 uppercase tracking-wide mt-1">
+    <span className="text-md text-white/70 uppercase tracking-wide mt-1">
       {label}
     </span>
   </motion.div>

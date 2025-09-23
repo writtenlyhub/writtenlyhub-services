@@ -225,32 +225,29 @@ const SocialProof = () => {
             </span>
           </div> */}
         </motion.div>
+      </motion.div>
 
-        {/* Stats grid */}
-        <motion.div
-          variants={container}
-          className="grid grid-cols-2 sm:grid-cols-4 gap-x-12 gap-y-8 mt-10 relative"
-        >
-          {stats.map((stat, index) => (
-            <motion.div
-              key={stat.id}
-              variants={fadeInUp}
-              className="relative text-center px-4 py-6"
-            >
-              <p className="text-2xl md:text-3xl font-bold text-white mb-2">
-                <Counter value={stat.value} unit={stat.unit} />
-              </p>
-              <p className="text-xs md:text-sm whitespace-nowrap text-white/60 uppercase tracking-wide leading-snug">
-                {stat.name}
-              </p>
-
-              {/* Divider for all but last item in row */}
-              {index % 4 !== 0 && (
-                <span className="hidden sm:block absolute top-1/2 left-0 h-10 w-px bg-white/10 -translate-y-1/2" />
-              )}
-            </motion.div>
-          ))}
-        </motion.div>
+      {/* Stats grid */}
+      <motion.div
+        variants={container}
+        className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pr-8"
+      >
+        {stats.map((stat, index) => (
+          <motion.div
+            key={stat.id}
+            variants={fadeInUp}
+            className={`text-center px-2 py-4 ${
+              index % 4 !== 3 ? "sm:border-r border-white/10" : ""
+            }`}
+          >
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">
+              <Counter value={stat.value} unit={stat.unit} />
+            </p>
+            <p className="text-xs sm:text-sm text-white/60 uppercase tracking-wide">
+              {stat.name}
+            </p>
+          </motion.div>
+        ))}
       </motion.div>
 
       {/* Centered Button */}

@@ -226,7 +226,7 @@ const OldNewWay = () => {
       {/* Cards container - not absolutely positioned */}
       <div
         ref={stickyRef}
-        className="flex items-start justify-center z-50 mt-12 sm:mt-34"
+        className="flex items-start justify-center z-50 mt-12 sm:mt-"
       >
         <div className="w-[90%] sm:w-[80%] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-start justify-center">
           {/* WH Healthcare Card (left) */}

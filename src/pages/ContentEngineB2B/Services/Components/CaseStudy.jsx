@@ -50,8 +50,8 @@ const CaseStudyZeffy = () => {
               </div>
 
               {/* Testimonial */}
-              <div className="bg-orange-500/10 border border-orange-500/30 rounded-lg p-5">
-                <p className="text-white italic text-base sm:text-lg">
+              <div className="bg-orange-500/10 border border-orange-500/30 rounded-lg p-4">
+                <p className="text-white italic text-base sm:text-md">
                   &quot;From the very beginning, I felt like I was in good
                   hands. Working with you was a real highlight - your
                   authenticity and care came through from day one.&quot;
@@ -85,7 +85,7 @@ const CaseStudyZeffy = () => {
                 </p>
                 <div className="h-px bg-white/10 mb-6" />
 
-                <div className="flex flex-col gap-12 justify-center flex-1">
+                <div className="flex flex-col gap-12 justify-evenly flex-1">
                   <StatItemModern
                     label="Organic impression growth"
                     value="220%"
@@ -116,10 +116,10 @@ const StatItemModern = ({ label, value }) => (
     transition={{ type: "spring", stiffness: 200, damping: 15 }}
     className="flex flex-col"
   >
-    <span className="text-2xl md:text-3xl font-extrabold text-orange-400">
+    <span className="text-2xl md:text-4xl font-extrabold text-orange-400">
       {value}
     </span>
-    <span className="text-sm text-white/70 uppercase tracking-wide mt-1">
+    <span className="text-md text-white/70 uppercase tracking-wide mt-1">
       {label}
     </span>
   </motion.div>
