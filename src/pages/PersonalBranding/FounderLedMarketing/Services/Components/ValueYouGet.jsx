@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import image1 from "../assets/1.jpg"
+import image1 from "../assets/1.jpg";
+import PersonalBrandingGraph from "../assets/PersonalBrandingGraph.png";
 
 const ValueSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -9,18 +10,18 @@ const ValueSection = () => {
   const images = [
     image1,
     "https://i.ibb.co/gZ6PPGMF/4.png",
-    "https://i.ibb.co/yBhbBhd7/3.png",
+    PersonalBrandingGraph,
     "https://i.ibb.co/CpQLBsM3/5.png",
   ];
 
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
+    setCurrentImageIndex(prevIndex =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
+    setCurrentImageIndex(prevIndex =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
@@ -49,7 +50,8 @@ const ValueSection = () => {
             Value you get
           </span>
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-white mt-2 md:mt-3 mb-3 md:mb-4">
-           <span className="text-orange-500">Results that speak </span>louder than promises
+            <span className="text-orange-500">Results that speak </span>louder
+            than promises
           </h2>
         </motion.div>
 
@@ -99,7 +101,11 @@ const ValueSection = () => {
             <button
               key={index}
               onClick={() => setCurrentImageIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all ${currentImageIndex === index ? 'bg-orange-500 w-6' : 'bg-white/30'}`}
+              className={`w-3 h-3 rounded-full transition-all ${
+                currentImageIndex === index
+                  ? "bg-orange-500 w-6"
+                  : "bg-white/30"
+              }`}
               aria-label={`Go to image ${index + 1}`}
             />
           ))}
@@ -113,12 +119,17 @@ const ValueSection = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="pt-4"
         >
-          <button 
+          <button
             className="inline-block px-12 py-4 bg-orange-500 cursor-pointer hover:bg-white text-white text-md hover:text-orange-500 font-semibold rounded-full transition-colors duration-700"
-              onClick={() => window.open("https://calendly.com/asthaverma/build-your-personal-brand-with-me", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://calendly.com/asthaverma/build-your-personal-brand-with-me",
+                "_blank"
+              )
+            }
             draggable="false"
-            onDragStart={(e) => e.preventDefault()}
-            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={e => e.preventDefault()}
+            onContextMenu={e => e.preventDefault()}
           >
             Get these results
           </button>

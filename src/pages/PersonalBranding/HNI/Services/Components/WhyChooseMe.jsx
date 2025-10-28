@@ -7,7 +7,6 @@ const ValueProposition = () => {
   const stickyRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // <-- Replaced items with the data you asked to use -->
   const items = [
     {
       title: "Ultra-high-net-worth psychology expertise",
@@ -199,7 +198,7 @@ const ValueProposition = () => {
                 } font-bold leading-tight text-white mb-4 md:mb-6`}
               >
                 The benefits that justify choosing
-                <span className="text-orange-500 block"> Writtenlyhub</span>
+                <span className="text-orange-500 block"> WrittenlyHub</span>
               </h2>
 
               <p
@@ -293,11 +292,11 @@ const ValueProposition = () => {
                         </h3>
                       </div>
                       <p
-                        className={`mt-2 md:mt-4 text-gray-600 ${
+                        className={`mt-2 md:mt-4 mx-auto text-gray-600 ${
                           isMobile ? "text-sm" : "text-base md:text-xl"
                         } max-w-prose`}
                       >
-                        {item.desc}
+                        ({item.desc})
                       </p>
                     </div>
                   </div>
