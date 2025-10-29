@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import healthcare from "../assets/healthcare.png";
 
 const RotatingBenefits = () => {
   return (
@@ -26,7 +27,7 @@ const RotatingBenefits = () => {
           <div className="p-4">
             <div className="relative rounded-2xl shadow-xl shadow-black/30">
               <img
-                src="https://i.ibb.co/3Y8wgb0T/2-3-day-delivery-not-weeks-2.png"
+                src={healthcare}
                 alt="2-3 day delivery, not weeks"
                 className="w-full h-auto rounded-2xl relative z-10"
                 draggable="false"
